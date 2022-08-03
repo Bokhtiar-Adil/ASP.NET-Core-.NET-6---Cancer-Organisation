@@ -1,0 +1,103 @@
+﻿@page
+@model NonProfitSiteV3.Pages.Forms.DonationForm.CreateModel
+
+@{
+    ViewData["Title"] = "Donate to Prevent Cancer";
+}
+
+<link rel="stylesheet" href="/css/myForm.css" asp-append-version="true" />
+
+<div style="height: 100px;"></div>
+<h1 style="text-align: center; color: red;">Donation Procedure</h1>
+
+<hr />
+<div class="instruction"><p>
+    you can donate using Bkash, Rocket, Nagad or Bank Accounts. please send the money in any of the account numbers provided below and then fill up the form with necessary information. insert the payment method, your account number, trxx number or other verification numbers in the 'Payment Details' section. also mention the account at which you sent the money in the same box. also, please provide your contact number so that we can contact you if we face problems processing your donation.
+    <br />
+</p></div>
+<hr />
+<div class="account-details">
+    <ul>
+        <li>
+            <h4>BKash Accounts:</h4>
+            <ol>
+                <li>01234-678910</li>
+                <li>01234-678910</li>
+                <li>01234-678910</li>
+                <li>01234-678910</li>
+            </ol>
+        </li>
+        <li>
+            <h4>Rocket Accounts:</h4>
+            <ol>
+                <li>01234-678910</li>
+                <li>01234-678910</li>
+                <li>01234-678910</li>
+                <li>01234-678910</li>
+            </ol>
+        </li>
+        <li>
+            <h4>Nagad Accounts:</h4>
+            <ol>
+                <li>01234-678910</li>
+                <li>01234-678910</li>
+                <li>01234-678910</li>
+                <li>01234-678910</li>
+            </ol>
+        </li>
+        <li>
+            <h4>Bank Accounts:</h4>
+            <ol>
+                <li>
+                    <p>Bank: Islami Bank Bangladesh Ltd. 
+                        <br />
+                        A/C Name: Evergreen Donation Fund
+                        <br />
+                        Current A/C No: 202020202020202020
+                        <br />
+                        Branch: Khulna
+                        <br />
+                        Routing: 12345678
+                        <br />
+                    </p>
+                </li>
+            </ol>
+        </li>
+    </ul>
+</div>
+<hr />
+<h3 style="text-align: center; color: red;">Donation Form</h3>
+<div class="container-fluid p-3" style="display: flex; align-items: center; justify-content: center;">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="mb-3">
+                <label asp-for="Donation.Don_contact" class="control-label"></label>
+                <input asp-for="Donation.Don_contact" class="form-control" />
+                <span asp-validation-for="Donation.Don_contact" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Donation.Don_email" class="control-label"></label>
+                <input asp-for="Donation.Don_email" class="form-control" type="email" />
+                <span asp-validation-for="Donation.Don_email" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Donation.Don_amount" class="control-label"></label>
+                <input asp-for="Donation.Don_amount" class="form-control" type="number" />
+                <span asp-validation-for="Donation.Don_amount" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="Donation.Don_details" class="control-label"></label>
+                <textarea asp-for="Donation.Don_details" class="form-control" placeholder="e.g. Bkash A/C No: 01xxxxxxxxx Trx Id: xxxxxx Sent to: 01234678910" ></textarea>
+                <span asp-validation-for="Donation.Don_details" class="text-danger"></span>
+            </div>
+            <div class="mb-3" style="display: flex; align-items: center; justify-content: center;">
+                <button type="submit" value="Create" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

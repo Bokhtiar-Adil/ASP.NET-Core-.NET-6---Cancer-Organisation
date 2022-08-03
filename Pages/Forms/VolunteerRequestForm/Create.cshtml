@@ -1,0 +1,66 @@
+﻿@page
+@model NonProfitSiteV3.Pages.Forms.VolunteerRequestForm.CreateModel
+
+@{
+    ViewData["Title"] = "Volunteer Request Form";
+}
+
+<div style="height: 100px;"></div>
+<h1 style="text-align: center; color: red;">Volunteer Request Form</h1>
+
+<hr />
+<div class="container-fluid p-3" style="display: flex; align-items: center; justify-content: center;">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="mb-3">
+                <label asp-for="VolunteerRequest.VLreq_name" class="control-label"></label>
+                <input asp-for="VolunteerRequest.VLreq_name" class="form-control" />
+                <span asp-validation-for="VolunteerRequest.VLreq_name" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="VolunteerRequest.VLreq_father" class="control-label"></label>
+                <input asp-for="VolunteerRequest.VLreq_father" class="form-control" />
+                <span asp-validation-for="VolunteerRequest.VLreq_father" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="VolunteerRequest.VLreq_contact" class="control-label"></label>
+                <input asp-for="VolunteerRequest.VLreq_contact" class="form-control" />
+                <span asp-validation-for="VolunteerRequest.VLreq_contact" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="VolunteerRequest.VLreq_email" class="control-label"></label>
+                <input asp-for="VolunteerRequest.VLreq_email" class="form-control" type="email" />
+                <span asp-validation-for="VolunteerRequest.VLreq_email" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="VolunteerRequest.VLreq_address" class="control-label"></label>
+                <textarea asp-for="VolunteerRequest.VLreq_address" class="form-control"></textarea>
+                <span asp-validation-for="VolunteerRequest.VLreq_address" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="VolunteerRequest.VLreq_occupation" class="control-label"></label>
+                <input asp-for="VolunteerRequest.VLreq_occupation" class="form-control" />
+                <span asp-validation-for="VolunteerRequest.VLreq_occupation" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="VolunteerRequest.VLreq_type" class="control-label"></label>
+                <textarea asp-for="VolunteerRequest.VLreq_type" class="form-control"></textarea>
+                <span asp-validation-for="VolunteerRequest.VLreq_type" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="VolunteerRequest.VLreq_quantity" class="control-label"></label>
+                <input asp-for="VolunteerRequest.VLreq_quantity" class="form-control" type="number" />
+                <span asp-validation-for="VolunteerRequest.VLreq_quantity" class="text-danger"></span>
+            </div>
+            <div class="mb-3" style="display: flex; align-items: center; justify-content: center;">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

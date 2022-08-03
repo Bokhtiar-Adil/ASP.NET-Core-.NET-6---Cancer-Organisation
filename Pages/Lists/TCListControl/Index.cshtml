@@ -1,0 +1,53 @@
+﻿@page
+@model NonProfitSiteV3.Pages.Lists.TCListControl.IndexModel
+
+@{
+    ViewData["Title"] = "Cancer Prevention Centers";
+}
+
+<div style="height: 100px;"></div>
+<h1 style="text-align: center; color: red;">Cancer Prevention Centers</h1>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TreatmentCenters[0].TC_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TreatmentCenters[0].TC_description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TreatmentCenters[0].TC_address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TreatmentCenters[0].TC_contact)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TreatmentCenters[0].TC_email)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.TreatmentCenters) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TC_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TC_description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TC_address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TC_contact)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TC_email)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

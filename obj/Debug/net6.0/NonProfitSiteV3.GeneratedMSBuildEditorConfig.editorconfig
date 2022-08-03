@@ -1,0 +1,356 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = NonProfitSiteV3
+build_property.RootNamespace = NonProfitSiteV3
+build_property.ProjectDir = D:\CSE-3110_Web_Project\NonProfitSiteV3\NonProfitSiteV3\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = true
+build_property.MSBuildProjectDirectory = D:\CSE-3110_Web_Project\NonProfitSiteV3\NonProfitSiteV3
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Areas/Identity/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Areas/Identity/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Areas/Identity/Pages/Account/Manage/ChangePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcQ2hhbmdlUGFzc3dvcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Areas/Identity/Pages/Account/Manage/Email.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcRW1haWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Areas/Identity/Pages/Account/Manage/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Areas/Identity/Pages/Account/Manage/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX0xheW91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Areas/Identity/Pages/Account/Manage/_ManageNav.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX01hbmFnZU5hdi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Areas/Identity/Pages/Account/Manage/_StatusMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1N0YXR1c01lc3NhZ2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Areas/Identity/Pages/Account/Manage/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxNYW5hZ2VcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Areas/Identity/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Areas/Identity/Pages/Account/ResetPassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZXNldFBhc3N3b3JkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Areas/Identity/Pages/Account/_StatusMessage.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfU3RhdHVzTWVzc2FnZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Areas/Identity/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Areas/Identity/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWJvdXRVcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/AdminPanel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5QYW5lbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Articles.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQXJ0aWNsZXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Cancer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ2FuY2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/BloodDonerForm/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcQmxvb2REb25lckZvcm1cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/BloodDonerForm/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcQmxvb2REb25lckZvcm1cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/BloodDonerForm/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcQmxvb2REb25lckZvcm1cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/BloodDonerForm/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcQmxvb2REb25lckZvcm1cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/BloodDonerForm/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcQmxvb2REb25lckZvcm1cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/DonationForm/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcRG9uYXRpb25Gb3JtXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/DonationForm/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcRG9uYXRpb25Gb3JtXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/DonationForm/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcRG9uYXRpb25Gb3JtXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/DonationForm/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcRG9uYXRpb25Gb3JtXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/DonationForm/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcRG9uYXRpb25Gb3JtXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/FinancialAidForm/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcRmluYW5jaWFsQWlkRm9ybVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/FinancialAidForm/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcRmluYW5jaWFsQWlkRm9ybVxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/FinancialAidForm/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcRmluYW5jaWFsQWlkRm9ybVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/FinancialAidForm/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcRmluYW5jaWFsQWlkRm9ybVxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/FinancialAidForm/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcRmluYW5jaWFsQWlkRm9ybVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/VolunteerApplicationForm/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcVm9sdW50ZWVyQXBwbGljYXRpb25Gb3JtXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/VolunteerApplicationForm/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcVm9sdW50ZWVyQXBwbGljYXRpb25Gb3JtXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/VolunteerApplicationForm/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcVm9sdW50ZWVyQXBwbGljYXRpb25Gb3JtXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/VolunteerApplicationForm/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcVm9sdW50ZWVyQXBwbGljYXRpb25Gb3JtXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/VolunteerApplicationForm/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcVm9sdW50ZWVyQXBwbGljYXRpb25Gb3JtXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/VolunteerRequestForm/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcVm9sdW50ZWVyUmVxdWVzdEZvcm1cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/VolunteerRequestForm/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcVm9sdW50ZWVyUmVxdWVzdEZvcm1cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/VolunteerRequestForm/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcVm9sdW50ZWVyUmVxdWVzdEZvcm1cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/VolunteerRequestForm/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcVm9sdW50ZWVyUmVxdWVzdEZvcm1cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Forms/VolunteerRequestForm/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRm9ybXNcVm9sdW50ZWVyUmVxdWVzdEZvcm1cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/GetInvolved.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcR2V0SW52b2x2ZWQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/HelpSupport.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSGVscFN1cHBvcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Lists/DoctorsListControl/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdHNcRG9jdG9yc0xpc3RDb250cm9sXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Lists/DoctorsListControl/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdHNcRG9jdG9yc0xpc3RDb250cm9sXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Lists/DoctorsListControl/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdHNcRG9jdG9yc0xpc3RDb250cm9sXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Lists/DoctorsListControl/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdHNcRG9jdG9yc0xpc3RDb250cm9sXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Lists/DoctorsListControl/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdHNcRG9jdG9yc0xpc3RDb250cm9sXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Lists/DoctorsListControl/IndexAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdHNcRG9jdG9yc0xpc3RDb250cm9sXEluZGV4QWRtaW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Lists/EventsListAdmin/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdHNcRXZlbnRzTGlzdEFkbWluXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Lists/EventsListAdmin/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdHNcRXZlbnRzTGlzdEFkbWluXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Lists/EventsListAdmin/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdHNcRXZlbnRzTGlzdEFkbWluXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Lists/EventsListAdmin/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdHNcRXZlbnRzTGlzdEFkbWluXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Lists/EventsListAdmin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdHNcRXZlbnRzTGlzdEFkbWluXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Lists/RegisteredVolunteersList/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdHNcUmVnaXN0ZXJlZFZvbHVudGVlcnNMaXN0XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Lists/RegisteredVolunteersList/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdHNcUmVnaXN0ZXJlZFZvbHVudGVlcnNMaXN0XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Lists/RegisteredVolunteersList/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdHNcUmVnaXN0ZXJlZFZvbHVudGVlcnNMaXN0XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Lists/RegisteredVolunteersList/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdHNcUmVnaXN0ZXJlZFZvbHVudGVlcnNMaXN0XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Lists/RegisteredVolunteersList/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdHNcUmVnaXN0ZXJlZFZvbHVudGVlcnNMaXN0XEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Lists/TCListControl/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdHNcVENMaXN0Q29udHJvbFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Lists/TCListControl/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdHNcVENMaXN0Q29udHJvbFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Lists/TCListControl/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdHNcVENMaXN0Q29udHJvbFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Lists/TCListControl/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdHNcVENMaXN0Q29udHJvbFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Lists/TCListControl/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdHNcVENMaXN0Q29udHJvbFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Lists/TCListControl/IndexAdmin.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTGlzdHNcVENMaXN0Q29udHJvbFxJbmRleEFkbWluLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/NewsEvents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcTmV3c0V2ZW50cy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Shared/_LoginPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/UserDataHolder/UserBloodRequest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckRhdGFIb2xkZXJcVXNlckJsb29kUmVxdWVzdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/UserDataHolder/UserDonation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckRhdGFIb2xkZXJcVXNlckRvbmF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/UserDataHolder/UserFinancialAidRequest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckRhdGFIb2xkZXJcVXNlckZpbmFuY2lhbEFpZFJlcXVlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/UserDataHolder/UserVolunteerAidRequest.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckRhdGFIb2xkZXJcVXNlclZvbHVudGVlckFpZFJlcXVlc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/UserDataHolder/UserVolunteerApplication.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckRhdGFIb2xkZXJcVXNlclZvbHVudGVlckFwcGxpY2F0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/UserHistory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlckhpc3RvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/VolunteerReqForm.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVm9sdW50ZWVyUmVxRm9ybS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/CSE-3110_Web_Project/NonProfitSiteV3/NonProfitSiteV3/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-dlpdriocnx

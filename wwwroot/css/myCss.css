@@ -1,0 +1,238 @@
+::before {
+  padding: 1rem;
+}
+::after {
+  padding: 1rem;
+}
+body {
+  background-color: #fff;
+}
+.home-welcome {
+  width: 100%;
+  height: 600px;
+}
+.img-and-greet {
+  background: url("./Images/welcome3.jpg") no-repeat center;
+  width: 100%;
+  height: 600px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 3vh;
+}
+.img-and-greet blockquote,
+h3 {
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  line-height: 3vh;
+  font-size: 25px;
+  font-weight: bold;
+  color: rgb(1, 13, 250);
+}
+
+/* ---------------------------------------------------------------------------------------------------------*/
+/* -------------------------------card template from quartz theme------------------------------------------ */
+/* ---------------------------------------------------------------------------------------------------------*/
+
+.card {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-width: auto;
+  word-wrap: break-word;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 3px solid rgba(60, 131, 182, 0.649);
+  border-radius: 30px;
+
+  margin-top: 2rem;
+}
+
+.card > hr {
+  margin-right: 0;
+  margin-left: 0;
+}
+
+.card > .list-group {
+  border-top: inherit;
+  border-bottom: inherit;
+}
+
+.card > .list-group:first-child {
+  border-top-width: 0;
+  border-top-left-radius: calc(0.5rem - 1px);
+  border-top-right-radius: calc(0.5rem - 1px);
+}
+
+.card > .list-group:last-child {
+  border-bottom-width: 0;
+  border-bottom-right-radius: calc(0.5rem - 1px);
+  border-bottom-left-radius: calc(0.5rem - 1px);
+}
+
+.card > .card-header + .list-group,
+.card > .list-group + .card-footer {
+  border-top: 0;
+}
+
+.card-body {
+  /* -ms-flex: 1 1 auto;
+  flex: 1 1 auto; */
+  padding: 1.75rem 2rem;
+  color: #fff;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+}
+
+.card-subtitle {
+  margin-top: -0.5rem;
+  margin-bottom: 0;
+}
+
+.card-text:last-child {
+  margin-bottom: 0;
+  color: rgb(24, 24, 24);
+  text-align: center;
+}
+
+.card-link + .card-link {
+  margin-left: 2rem;
+}
+
+.card-header {
+  padding: 0.875rem 2rem;
+  margin-bottom: 0;
+  color: rgb(255, 0, 0);
+  /* background-color: transparent; */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-header:first-child {
+  border-radius: calc(0.5rem - 1px) calc(0.5rem - 1px) 0 0;
+}
+.card-header h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-transform: uppercase;
+}
+
+.card-footer {
+  padding: 0.875rem 2rem;
+  color: #fff;
+  /* background-color: transparent; */
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.card-footer:last-child {
+  border-radius: 0 0 calc(0.5rem - 1px) calc(0.5rem - 1px);
+}
+
+.card-header-tabs {
+  margin-right: -1rem;
+  margin-bottom: -0.875rem;
+  margin-left: -1rem;
+  border-bottom: 0;
+}
+
+.card-header-tabs .nav-link.active {
+  /* background-color: transparent; */
+  border-bottom-color: transparent;
+}
+
+.card-header-pills {
+  margin-right: -1rem;
+  margin-left: -1rem;
+}
+
+.card-img-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2rem;
+  border-radius: calc(0.5rem - 1px);
+}
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+  width: 100%;
+}
+
+.card-img,
+.card-img-top {
+  border-top-left-radius: calc(0.5rem - 1px);
+  border-top-right-radius: calc(0.5rem - 1px);
+}
+
+.card-img,
+.card-img-bottom {
+  border-bottom-right-radius: calc(0.5rem - 1px);
+  border-bottom-left-radius: calc(0.5rem - 1px);
+}
+
+.card-group > .card {
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 576px) {
+  .card-group {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+  }
+  .card-group > .card {
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    margin-bottom: 0;
+  }
+  .card-group > .card + .card {
+    margin-left: 0;
+    border-left: 0;
+  }
+  .card-group > .card:not(:last-child) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .card-group > .card:not(:last-child) .card-img-top,
+  .card-group > .card:not(:last-child) .card-header {
+    border-top-right-radius: 0;
+  }
+  .card-group > .card:not(:last-child) .card-img-bottom,
+  .card-group > .card:not(:last-child) .card-footer {
+    border-bottom-right-radius: 0;
+  }
+  .card-group > .card:not(:first-child) {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+  }
+  .card-group > .card:not(:first-child) .card-img-top,
+  .card-group > .card:not(:first-child) .card-header {
+    border-top-left-radius: 0;
+  }
+  .card-group > .card:not(:first-child) .card-img-bottom,
+  .card-group > .card:not(:first-child) .card-footer {
+    border-bottom-left-radius: 0;
+  }
+}
+
+/* ---------------------------------------------------------------------------------------------- */
+/* ---------------------------alternating horizontal card template--------------------------------*/
+/* ---------------------------------------------------------------------------------------------- */
+

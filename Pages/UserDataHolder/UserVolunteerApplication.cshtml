@@ -1,0 +1,86 @@
+﻿@page
+@model NonProfitSiteV3.Pages.UserDataHolder.UserVolunteerApplicationModel
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    ViewData["Title"] = "User Volunteer Application";
+}
+
+<div style="height: 100px;"></div>
+<h1>@User.Identity?.Name 's Volunteer Application</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerApplicants[0].VA_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerApplicants[0].VA_father)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerApplicants[0].VA_contact)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerApplicants[0].VA_email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerApplicants[0].VA_education)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerApplicants[0].VA_experience)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerApplicants[0].VA_religion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerApplicants[0].VA_dob)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerApplicants[0].VA_address)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.VolunteerApplicants) {
+            @if(User.Identity?.Name == item.VA_email)
+            {
+                <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.VA_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VA_father)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VA_contact)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VA_email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VA_education)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VA_experience)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VA_religion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VA_dob)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VA_address)
+            </td>
+            
+        </tr>
+            }
+            
+}
+    </tbody>
+</table>

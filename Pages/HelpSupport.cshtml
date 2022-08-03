@@ -1,0 +1,294 @@
+﻿@page
+@model NonProfitSiteV3.Pages.HelpSupportModel
+@{
+}
+<link rel="stylesheet" href="~/css/myHelpSupport.css" asp-append-version="true" />
+@*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+
+<div style="height: 90px;"></div>
+<section class="short-intro" style="z-index: 10;">
+    <h1>help and support</h1>
+</section>
+<style>
+    .short-intro {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background: #36454F;
+    height: fit-content;
+    }
+    .short-intro h1 {
+    color: lawngreen;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    }
+</style>
+
+<section class="topic-list">
+    <h3>get the help you need</h3>
+    <div class="topic-link">
+        <button class="link" style="
+            background: url(../Images/financial-aid.jpg) center/cover no-repeat;
+          ">
+            <a href="#financialaid">financial aid</a>
+        </button>
+        <button class="link" style="
+            background: url(../Images/blood-bank.jpg) center/cover no-repeat;
+          ">
+            <a href="#bloodbank">blood bank</a>
+        </button>
+        <button class="link" style="
+            background: url(../Images/volunteer5.jpg) center/cover no-repeat;
+          ">
+            <a href="#volunteer">volunteer services</a>
+        </button>
+        <button class="link" style="
+            background: url(../Images/advocacy2.jpg) center/cover no-repeat;
+          ">
+            <a href="#clinics">find a treatment center</a>
+        </button>
+        <button class="link" style="
+            background: url(../Images/doctor-corner.webp) center/cover no-repeat;
+          ">
+            <a href="#doctor">doctor's corner</a>
+        </button>
+    </div>
+</section>
+
+
+<section class="page-part" id="financialaid">
+  <div style="height: 100px"></div>
+  <h3>ask for financial aid</h3>
+  <p>If you have been touched by cancer, Evergreen Cancer Society is here to help. We can help you with financial aid, blood bank, volunteer service and many more.</p>
+  <br />
+  <p>you need to fill up a form with proper information. Then our people will contact you to validate the info and take
+    further steps.</p>
+  <button type="button" class="btn btn-primary">
+    <a asp-page="./Forms/FinancialAidForm/Create" style="color: #fff;">Open Form</a>
+  </button>
+  @*<button type="button" class="btn btn-success btn-lg">open form</button>*@
+  @*<button type="button" class="mybutton" id="aidformOpener">open form</button>*@
+  @*<div class="my-form-container" id="aidform">
+      <form class="my-form">
+          <h4>financial aid request form</h4>
+          <div class="single-pair">
+              <label for="aid_name">Name</label>
+              <input type="text" id="aid_name" placeholder="e.g. Umar Faruk" required />
+          </div>
+          <div class="single-pair">
+              <label for="aid_father">Father's Name</label>
+              <input type="text" id="aid_father" placeholder="e.g. Abu Bakr" />
+          </div>
+          <div class="single-pair">
+              <label for="aid_contact">Contact Number</label>
+              <input type="text" id="aid_contact" placeholder="e.g. 01xxxxxxxxx" required />
+          </div>
+          <div class="single-pair">
+              <label for="aid_email">Email</label>
+              <input type="email" id="aid_email" placeholder="e.g. umarfaruk@gmail.com" />
+          </div>
+          <div class="single-pair">
+              <label for="aid_address">Address</label>
+              <textarea id="aid_address" placeholder="e.g. 20/4, KUET Road, Khulna." required ></textarea>
+          </div>
+          <div class="single-pair">
+              <label for="aid_occupation">Occupation</label>
+              <input type="text" id="aid_occupation" placeholder="e.g. Engineer" required />
+          </div>
+          <div class="single-pair">
+              <label for="aid_reason">Why do you need aid?</label>
+              <textarea id="aid_reason" placeholder="e.g. I have cancer." required ></textarea>
+          </div>
+          <div class="single-pair">
+              <label for="aid_amount">Amount (in Taka)</label>
+              <input type="text" id="aid_amount" placeholder="e.g. 30,000" required />
+          </div>
+          <div class="my-form-btn-holder"><button type="submit" class="mybutton" style="background-color: rgb(28, 3, 253); color: rgb(5, 255, 5);  box-shadow: 2px 4px 4px #fff;">Submit</button></div>
+      </form>
+  </div>
+  <script>
+    const formContainer = document.getElementById("aidform");
+    const formOpener = document.getElementById("aidformOpener");
+
+    formOpener.addEventListener('click', function(){
+        formContainer.classList.toggle('form-show');
+    });
+  </script>*@
+</section>
+
+<section class="page-part" id="bloodbank">
+  <div style="height: 100px"></div>
+  <h3>request for blood donation</h3>
+  <p>If you have been touched by cancer, Evergreen Cancer Society is here to help. We can help you with financial aid, blood bank, volunteer service and many more.</p>
+  <br />
+  <p>Our blood bank is free. You can collect blood from any of our branch totally free of cost showing proper papers. 
+     However, we might need to set up a doner for your particular blood type at your particular location in case of shortage.
+     Also, we can send our people with required amount of blood to your location using the info you provide on form.
+     So, we request you to fill up a form beforehand.</p>
+  @*<button type="button" class="btn btn-success btn-lg">open form</button>*@
+  @*<button type="button" class="mybutton" id="bbformOpener">open form</button>  *@
+  <button type="button" class="btn btn-primary">
+      <a asp-page="./Forms/BloodDonerForm/Create" style="color: #fff;">Open Form</a>
+  </button>
+  @*<div class="my-form-container" id="bbform">
+      <form class="my-form">
+          <h4>Blood request form</h4>
+          <div class="single-pair">
+              <label for="bb_name">Name</label>
+              <input type="text" id="bb_name" placeholder="e.g. Umar Faruk" required />
+          </div>
+          <div class="single-pair">
+              <label for="bb_father">Father's Name</label>
+              <input type="text" id="bb_father" placeholder="e.g. Abu Bakr" />
+          </div>
+          <div class="single-pair">
+              <label for="bb_contact">Contact Number</label>
+              <input type="text" id="bb_contact" placeholder="e.g. 01xxxxxxxxx" required />
+          </div>
+          <div class="single-pair">
+              <label for="bb_email">Email</label>
+              <input type="email" id="bb_email" placeholder="e.g. umarfaruk@gmail.com" />
+          </div>
+          <div class="single-pair">
+              <label for="bb_address">Address</label>
+              <textarea id="bb_address" placeholder="e.g. 20/4, KUET Road, Khulna." required ></textarea>
+          </div>
+          <div class="single-pair">
+              <label for="bb_occupation">Occupation</label>
+              <input type="text" id="bb_occupation" placeholder="e.g. Engineer" required />
+          </div>
+          <div class="single-pair">
+              <label for="bbbginput" >blood type</label>
+              <input list="bloodTypes" id="bbbginput" placeholder="e.g. A+" required/>
+              <datalist id="bloodTypes">
+                  <option value="A+"></option>
+                  <option value="A-"></option>
+                  <option value="B"></option>
+                  <option value="A-"></option>
+                  <option value="O+"></option>
+                  <option value="O-"></option>
+                  <option value="AB+"></option>
+                  <option value="AB-"></option>
+              </datalist>
+          </div>
+          <div class="single-pair">
+              <label for="bb_bloodquantity">quantity (number of Bags)</label>
+              <input type="Number" id="bb_bloodquantity" placeholder="e.g. 1" required />
+          </div>
+          <div class="single-pair">
+              <label for="bb_timelimit">deadline (in days)</label>
+              <input type="Number" id="bb_timelimit" placeholder="e.g. 1" required />
+          </div>
+          <div class="my-form-btn-holder"><button type="submit" class="mybutton" style="background-color: rgb(28, 3, 253); color: rgb(5, 255, 5);  box-shadow: 2px 4px 4px #fff;">Submit</button></div>
+      </form>
+  </div>
+  <script>
+    const formContainer2 = document.getElementById("bbform");
+    const formOpener2 = document.getElementById("bbformOpener");
+
+    formOpener2.addEventListener('click', function(){
+        formContainer2.classList.toggle('form-show');
+    });
+  </script>*@
+</section>
+
+<section class="page-part" id="volunteer">
+  <div style="height: 100px"></div>
+  <h3>need volunteer support?</h3>
+  <p>If you have been touched by cancer, Evergreen Cancer Society is here to help. We can help you with financial aid, blood bank, volunteer service and many more.</p>
+  <br />
+  <p>our volunteers are always there for you. if you need any voluntary support please fill up the following form.
+      then our people contact you to validate the info and take further steps to help you.
+  </p>
+  <button type="button" class="btn btn-primary">
+    <a asp-page="./Forms/VolunteerRequestForm/Create" style="color: #fff;">Open Form</a>
+  </button>
+  @*<button type="button" class="btn btn-success btn-lg">open form</button>*@
+  @*<button type="button" class="mybutton" id="vlreqformOpener">open form</button>  
+  <div class="my-form-container" id="vlreqform">
+      <form class="my-form">
+          <h4>Blood request form</h4>
+          <div class="single-pair">
+              <label for="vlreq_name">Name</label>
+              <input type="text" id="vlreq_name" placeholder="e.g. Umar Faruk" required />
+          </div>
+          <div class="single-pair">
+              <label for="vlreq_father">Father's Name</label>
+              <input type="text" id="vlreq_father" placeholder="e.g. Abu Bakr" />
+          </div>
+          <div class="single-pair">
+              <label for="vlreq_contact">Contact Number</label>
+              <input type="text" id="vlreq_contact" placeholder="e.g. 01xxxxxxxxx" required />
+          </div>
+          <div class="single-pair">
+              <label for="vlreq_email">Email</label>
+              <input type="email" id="vlreq_email" placeholder="e.g. umarfaruk@gmail.com" />
+          </div>
+          <div class="single-pair">
+              <label for="vlreq_address">Address</label>
+              <textarea id="vlreq_address" placeholder="e.g. 20/4, KUET Road, Khulna." required ></textarea>
+          </div>
+          <div class="single-pair">
+              <label for="vlreq_occupation">Occupation</label>
+              <input type="text" id="vlreq_occupation" placeholder="e.g. Engineer" required />
+          </div>
+          <div class="single-pair">
+              <label for="vlreqinput" >type of voluntary support needed</label>
+              <input list="vlreqTypes" id="vlreqinput" placeholder="e.g. Home-nursing" required/>
+              <datalist id="vlreqTypes">
+                  <option value="Home-nursing"></option>
+                  <option value="Old People Support"></option>
+                  <option value="Child Care"></option>
+                  <option value="Cancer Support"></option>
+                  <option value="Blood Donation Event"></option>
+              </datalist>
+          </div>
+          <div class="single-pair">
+              <label for="vlreq_quantity">how many volunteer/s ?</label>
+              <input type="Number" id="vlreq_quantity" placeholder="e.g. 1" required />
+          </div>
+          <div class="my-form-btn-holder">
+              <button type="submit" class="mybutton" style="background-color: rgb(28, 3, 253); color: rgb(5, 255, 5);  box-shadow: 2px 4px 4px #fff;">Submit</button>
+          </div>
+      </form>
+  </div>
+  <script>
+    const formContainer3 = document.getElementById("vlreqform");
+    const formOpener3 = document.getElementById("vlreqformOpener");
+
+    formOpener3.addEventListener('click', function(){
+        formContainer3.classList.toggle('form-show');
+    });
+  </script>*@
+</section>
+
+<section class="page-part" id="clinics">
+    <div style="height: 100px;"></div>
+    <h3>find a treatment center</h3>
+    <p>Our database holds the address and contact information about various cancer treatment facility throughout the country. Evergreen group also established many cancer treatment facilites which will give you the best cancer treatment at a minimum cost. Along with clinics, Evergreen foundation also established many care centers which can acomodate old cancer patients for a more intimate care under the supervision of specialists.</p>
+    <br />
+    <p>You can also call an ambulances from these establishments free of cost if necessary.</p>
+    <br />
+    <button type="button" class="btn btn-primary">
+        <a asp-page="./Lists/TCListControl/Index" style="color: #fff;">Check out the cancer prevention centers</a>
+    </button>
+
+</section>
+
+<section class="page-part" id="doctor">
+    <div style="height: 100px;"></div>
+    <h3>doctor's corner</h3>
+    <p>Evergreen group has contacts with many cancer specialists and doctors thorughout the country. From our database you can find the cancer specialists in your area and contact their chambers to arrange a session.</p>
+    <br />
+    <button type="button" class="btn btn-primary">
+        <a asp-page="./Lists/DoctorsListControl/Index" style="color: #fff;">get in touch with a doctor</a>
+    </button>
+    
+
+</section>
+
+
+@*<img src="/Images/under_construction.png" alt="" style="margin: 1rem; width: 400px; height: auto;">*@

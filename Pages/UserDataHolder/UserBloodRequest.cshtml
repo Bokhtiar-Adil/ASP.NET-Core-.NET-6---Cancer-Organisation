@@ -1,0 +1,86 @@
+﻿@page
+@model NonProfitSiteV3.Pages.UserDataHolder.UserBloodRequestModel
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    ViewData["Title"] = "User Blood Requests";
+}
+
+<div style="height: 100px;"></div>
+<h1>@User.Identity?.Name 's Blood Requests</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BloodDoner[0].BB_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BloodDoner[0].BB_father)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BloodDoner[0].BB_contact)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BloodDoner[0].BB_email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BloodDoner[0].BB_address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BloodDoner[0].BB_occupation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BloodDoner[0].BB_blodtype)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BloodDoner[0].BB_quantity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.BloodDoner[0].BB_deadline)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.BloodDoner) {
+    @if(User.Identity?.Name == item.BB_email)
+            {
+                <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BB_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BB_father)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BB_contact)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BB_email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BB_address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BB_occupation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BB_blodtype)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BB_quantity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BB_deadline)
+            </td>
+            
+        </tr>
+            }
+            
+}
+    </tbody>
+</table>

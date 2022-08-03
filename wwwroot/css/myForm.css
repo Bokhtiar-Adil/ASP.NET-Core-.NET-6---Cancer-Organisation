@@ -1,0 +1,38 @@
+﻿.account-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    column-gap: 1rem;
+    width: 100%;
+}
+
+.account-details ul {
+    display: flex;
+    align-items: first baseline;
+    justify-content: space-around;
+    width: 100%;
+    column-gap: 1rem;
+}
+
+@media screen and (max-width: 675px) {
+    .account-details ul {
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1rem;
+    }
+   
+}
+
+p {
+    text-transform: capitalize;
+    text-align: justify;
+    width: 100%;
+    padding: 1rem;
+}
+
+ol p {
+    text-transform: capitalize;
+    text-align: justify;
+    width: 100%;
+    padding: 1rem;
+}

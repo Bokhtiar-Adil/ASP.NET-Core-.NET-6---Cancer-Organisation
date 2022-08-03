@@ -1,0 +1,25 @@
+﻿.login-form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("/Images/loginbg3.jpg") no-repeat center;
+
+    height: 100vh;
+    width: 100vw;
+}
+h2 {
+    color: yellow;
+    text-transform: capitalize;
+    text-align: center;
+}
+p {
+    margin: 0.5rem;
+}
+a {
+    color: #fff;
+}
+p :hover {
+    color: yellow;
+}
+
+

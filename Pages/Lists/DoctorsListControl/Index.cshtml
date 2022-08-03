@@ -1,0 +1,52 @@
+﻿@page
+@model NonProfitSiteV3.Pages.Lists.DoctorsListControl.IndexModel
+
+@{
+    ViewData["Title"] = "Doctors";
+}
+
+<div style="height: 100px;"></div>
+<h1 style="text-align: center; color: red;">Doctors</h1>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Doctors[0].Doc_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Doctors[0].Doc_description)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Doctors[0].Doc_city)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Doctors[0].Doc_contact)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Doctors[0].Doc_email)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Doctors) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Doc_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Doc_description)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Doc_city)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Doc_contact)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Doc_email)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

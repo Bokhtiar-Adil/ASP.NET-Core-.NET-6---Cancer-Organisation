@@ -1,0 +1,73 @@
+﻿@page
+@model NonProfitSiteV3.Pages.UserHistoryModel
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+@{
+}
+<style>
+    section {
+        width: 100%;
+        height: fit-content;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    h2 {
+        text-align: center;
+        text-transform: capitalize;
+        color: red;
+    }
+    p {
+        width: 80%;
+        text-align: justify;
+        text-transform: capitalize;
+        margin: 1rem;
+    }
+    main ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+</style>
+
+<div style="height: 90px;"></div>
+<section class="short-intro" style="z-index: 10;">
+    <h1>user history</h1>
+</section>
+<style>
+    .short-intro {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background: #36454F;
+    height: fit-content;
+    }
+    .short-intro h1 {
+    color: lawngreen;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    }
+</style>
+<section>
+    <h2>Hello @User.Identity?.Name!</h2>
+    <div style="height: 2px; width: 100%; background: blue;"></div>
+    <p>you can find your history here. if you have used the same email you opened this account with, we can track your history. if you don't find any of your previous activities, then that means you most likely used a different email there. in that case contact our helpline for any help.</p>
+    <ul>
+        <li class="mb-3"><a class="btn btn-primary" asp-page="./UserDataHolder/UserDonation">Your Donation History</a></li>
+        <li class="mb-3"><a class="btn btn-primary" asp-page="./UserDataHolder/UserFinancialAidRequest">Your Financial Aid Requests</a></li>
+        <li class="mb-3"><a class="btn btn-primary" asp-page="./UserDataHolder/UserBloodRequest">Your Blood Requests</a></li>
+        <li class="mb-3"><a class="btn btn-primary" asp-page="./UserDataHolder/UserVolunteerAidRequest">Your Volunteer Aid Requests</a></li>
+        <li class="mb-3"><a class="btn btn-primary" asp-page="./UserDataHolder/UserVolunteerApplication">Your Application For Volunteer</a></li>
+    </ul>
+    
+    
+</section>
+

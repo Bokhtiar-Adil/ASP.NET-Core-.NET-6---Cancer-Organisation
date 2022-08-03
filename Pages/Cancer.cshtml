@@ -1,0 +1,928 @@
+﻿@page
+@model NonProfitSiteV3.Pages.CancerModel
+@{
+}
+<link rel="stylesheet" href="~/css/myCancerpage.css" asp-append-version="true">
+
+<div style="height: 90px;"></div>
+<section class="short-intro" style="z-index: 10;">
+    <h1>cancer a-z</h1>
+</section>
+<style>
+    .short-intro {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background: #36454F;
+    height: fit-content;
+    }
+    .short-intro h1 {
+    color: lawngreen;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    }
+</style>
+
+<section class="topic-section">    
+    <h3 class="topic-heading">list of topics</h3>
+    <div class="topic-link">
+        <button class="link" style="background: url(../Images/cancer1.jpeg) center/cover no-repeat">
+            <a href="#cancerbasic">cancer basic</a>
+        </button>
+        <button class="link" style="
+            background: url(../Images/breast-cancer.jpg) center/cover no-repeat;
+          ">
+            <a href="#breastcancer">breast cancer</a>
+        </button>
+        <button class="link" style="
+            background: url(../Images/oral-cancer.jpg) center/cover no-repeat;
+          ">
+            <a href="#oralcancer">oral cancer</a>
+        </button>
+        <button class="link" style="
+            background: url(../Images/lung-cancer.jpg) center/cover no-repeat;
+          ">
+            <a href="#lungcancer">lung cancer</a>
+        </button>
+        <button class="link" style="
+            background: url(../Images/skin-cancer2.jpeg) center/cover no-repeat;
+          ">
+            <a href="#skincancer">skin cancer</a>
+        </button>
+        <button class="link" style="
+            background: url(../Images/blood-cancer.jpg) center/cover no-repeat;
+          ">
+            <a href="#bloodcancer">blood cancer</a>
+        </button>
+        <button class="link" style="
+            background: url(../Images/prostate-cancer.jpg) center/cover
+              no-repeat;
+          ">
+            <a href="#prostatecancer">prostate cancer</a>
+        </button>
+        <button class="link" style="
+            background: url(../Images/cancer-prevent.jpg) center/cover no-repeat;
+          ">
+            <a href="#prevent">cancer prevention</a>
+        </button>
+        
+    </div>
+</section>
+
+
+@* <link rel="stylesheet" href="~/css/lumenTheme.css"> *@
+<section class="topic-section" id="cancerbasic">
+    <div style="height: 100px;"></div>
+    <h3 class="topic-heading">cancer basic</h3>
+    <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                    aria-expanded="true" aria-controls="collapseOne">
+                    What is Cancer?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    Cancer is a disease in which some of the body’s cells grow uncontrollably and spread to other parts of the body. 
+
+Cancer can start almost anywhere in the human body, which is made up of trillions of cells. Normally, human cells grow and multiply (through a process called cell division) to form new cells as the body needs them. When cells grow old or become damaged, they die, and new cells take their place.
+
+Sometimes this orderly process breaks down, and abnormal or damaged cells grow and multiply when they shouldn’t. These cells may form tumors, which are lumps of tissue. Tumors can be cancerous or not cancerous (benign). 
+
+Cancerous tumors spread into, or invade, nearby tissues and can travel to distant places in the body to form new tumors (a process called metastasis). Cancerous tumors may also be called malignant tumors. Many cancers form solid tumors, but cancers of the blood, such as leukemias, generally do not.
+
+Benign tumors do not spread into, or invade, nearby tissues. When removed, benign tumors usually don’t grow back, whereas cancerous tumors sometimes do. Benign tumors can sometimes be quite large, however. Some can cause serious symptoms or be life threatening, such as benign tumors in the brain.
+
+<br />
+
+Cancer cells differ from normal cells in many ways. For instance, cancer cells:
+
+    grow in the absence of signals telling them to grow. Normal cells only grow when they receive such signals. 
+    ignore signals that normally tell cells to stop dividing or to die (a process known as programmed cell death, or apoptosis).
+    invade into nearby areas and spread to other areas of the body. Normal cells stop growing when they encounter other cells, and most normal cells do not move around the body. 
+    tell blood vessels to grow toward tumors.  These blood vessels supply tumors with oxygen and nutrients and remove waste products from tumors.
+    hide from the immune system. The immune system normally eliminates damaged or abnormal cells. 
+    trick the immune system into helping cancer cells stay alive and grow. For instance, some cancer cells convince immune cells to protect the tumor instead of attacking it.
+    accumulate multiple changes in their chromosomes, such as duplications and deletions of chromosome parts. Some cancer cells have double the normal number of chromosomes.
+    rely on different kinds of nutrients than normal cells. In addition, some cancer cells make energy from nutrients in a different way than most normal cells. This lets cancer cells grow more quickly. 
+
+Many times, cancer cells rely so heavily on these abnormal behaviors that they can’t survive without them. Researchers have taken advantage of this fact, developing therapies that target the abnormal features of cancer cells. For example, some cancer therapies prevent blood vessels from growing toward tumors, essentially starving the tumor of needed nutrients.  
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    What causes Cancer?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    The majority of cancers, some 90–95% of cases, are due to genetic mutations from environmental and lifestyle factors. The remaining 5–10% are due to inherited genetics. Environmental refers to any cause that is not inherited, such as lifestyle, economic, and behavioral factors and not merely pollution.Common environmental factors that contribute to cancer death include tobacco use (25–30%), diet and obesity (30–35%), infections (15–20%), radiation (both ionizing and non-ionizing, up to 10%), lack of physical activity, and pollution. Psychological stress does not appear to be a risk factor for the onset of cancer, though it may worsen outcomes in those who already have cancer.
+                    <br />
+
+It is not generally possible to prove what caused a particular cancer because the various causes do not have specific fingerprints. For example, if a person who uses tobacco heavily develops lung cancer, then it was probably caused by the tobacco use, but since everyone has a small chance of developing lung cancer as a result of air pollution or radiation, the cancer may have developed for one of those reasons. Excepting the rare transmissions that occur with pregnancies and occasional organ donors, cancer is generally not a transmissible disease,[42] however factors that may have contributed to the development of cancer can be transmissible; such as oncoviruses like hepatitis B, Epstein-Barr virus and HIV. 
+<br /><br />
+<strong>Diet and Exercise</strong><br />Diet, physical inactivity and obesity are related to up to 30–35% of cancer deaths. In the United States, excess body weight is associated with the development of many types of cancer and is a factor in 14–20% of cancer deaths.[54] A UK study including data on over 5 million people showed higher body mass index to be related to at least 10 types of cancer and responsible for around 12,000 cases each year in that country. Physical inactivity is believed to contribute to cancer risk, not only through its effect on body weight but also through negative effects on the immune system and endocrine system.[54] More than half of the effect from diet is due to overnutrition (eating too much), rather than from eating too few vegetables or other healthful foods.
+
+Some specific foods are linked to specific cancers. A high-salt diet is linked to gastric cancer. Aflatoxin B1, a frequent food contaminant, causes liver cancer. Betel nut chewing can cause oral cancer.National differences in dietary practices may partly explain differences in cancer incidence. For example, gastric cancer is more common in Japan due to its high-salt diet while colon cancer is more common in the United States. Immigrant cancer profiles mirror those of their new country, often within one generation.<br />
+
+<br /><strong>Heredity</strong><br />The vast majority of cancers are non-hereditary (sporadic). Hereditary cancers are primarily caused by an inherited genetic defect. Less than 0.3% of the population are carriers of a genetic mutation that has a large effect on cancer risk and these cause less than 3–10% of cancer.[71] Some of these syndromes include: certain inherited mutations in the genes BRCA1 and BRCA2 with a more than 75% risk of breast cancer and ovarian cancer,[71] and hereditary nonpolyposis colorectal cancer (HNPCC or Lynch syndrome), which is present in about 3% of people with colorectal cancer,[72] among others.
+
+Statistically for cancers causing most mortality, the relative risk of developing colorectal cancer when a first-degree relative (parent, sibling or child) has been diagnosed with it is about 2.[73] The corresponding relative risk is 1.5 for lung cancer,[74] and 1.9 for prostate cancer.[75] For breast cancer, the relative risk is 1.8 with a first-degree relative having developed it at 50 years of age or older, and 3.3 when the relative developed it when being younger than 50 years of age.[76]
+
+Taller people have an increased risk of cancer because they have more cells than shorter people. Since height is genetically determined to a large extent, taller people have a heritable increase of cancer risk.
+
+<br /><br /><strong>Radiation</strong><br />Radiation exposure such as ultraviolet radiation and radioactive material is a risk factor for cancer.[62][63][64] Many non-melanoma skin cancers are due to ultraviolet radiation, mostly from sunlight.[63] Sources of ionizing radiation include medical imaging and radon gas.[63]
+
+Ionizing radiation is not a particularly strong mutagen.[65] Residential exposure to radon gas, for example, has similar cancer risks as passive smoking.[65] Radiation is a more potent source of cancer when combined with other cancer-causing agents, such as radon plus tobacco smoke.[65] Radiation can cause cancer in most parts of the body, in all animals and at any age. Children are twice as likely to develop radiation-induced leukemia as adults; radiation exposure before birth has ten times the effect.[65]
+
+Medical use of ionizing radiation is a small but growing source of radiation-induced cancers. Ionizing radiation may be used to treat other cancers, but this may, in some cases, induce a second form of cancer.[65] It is also used in some kinds of medical imaging.[66]
+
+Prolonged exposure to ultraviolet radiation from the sun can lead to melanoma and other skin malignancies.[67] Clear evidence establishes ultraviolet radiation, especially the non-ionizing medium wave UVB, as the cause of most non-melanoma skin cancers, which are the most common forms of cancer in the world.[67]
+
+Non-ionizing radio frequency radiation from mobile phones, electric power transmission and other similar sources has been described as a possible carcinogen by the World Health Organization's International Agency for Research on Cancer.[68] Evidence, however, has not supported a concern.[69] [62] This includes that studies have not found a consistent link between mobile phone radiation and cancer risk.<br />
+
+<br /><strong>Chemicals</strong><br />Exposure to particular substances have been linked to specific types of cancer. These substances are called carcinogens.
+
+Tobacco smoke, for example, causes 90% of lung cancer.[43] It also causes cancer in the larynx, head, neck, stomach, bladder, kidney, esophagus and pancreas.[44] Tobacco smoke contains over fifty known carcinogens, including nitrosamines and polycyclic aromatic hydrocarbons.[45]
+
+Tobacco is responsible for about one in five cancer deaths worldwide[45] and about one in three in the developed world.[46] Lung cancer death rates in the United States have mirrored smoking patterns, with increases in smoking followed by dramatic increases in lung cancer death rates and, more recently, decreases in smoking rates since the 1950s followed by decreases in lung cancer death rates in men since 1990.[47][48]
+
+In Western Europe, 10% of cancers in males and 3% of cancers in females are attributed to alcohol exposure, especially liver and digestive tract cancers.[49] Cancer from work-related substance exposures may cause between 2 and 20% of cases,[50] causing at least 200,000 deaths.[51] Cancers such as lung cancer and mesothelioma can come from inhaling tobacco smoke or asbestos fibers, or leukemia from exposure to benzene.[51]
+
+Exposure to perfluorooctanoic acid (PFOA), which is predominantly used in the production of Teflon, is known to cause two kinds of cancer.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Cancer types
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <strong>Carcinoma</strong><br />
+
+Carcinomas are the most common type of cancer. They are formed by epithelial cells, which are the cells that cover the inside and outside surfaces of the body. There are many types of epithelial cells, which often have a column-like shape when viewed under a microscope.
+
+<br /><strong>Sarcoma</strong><br />
+
+Soft tissue sarcoma forms in soft tissues of the body, including muscle, tendons, fat, blood vessels, lymph vessels, nerves, and tissue around joints.Credit: Terese Winslow Sarcomas are cancers that form in bone and soft tissues, including muscle, fat, blood vessels, lymph vessels, and fibrous tissue (such as tendons and ligaments).
+<br /><strong>Leukemia</strong><br />
+
+Cancers that begin in the blood-forming tissue of the bone marrow are called leukemias. These cancers do not form solid tumors. Instead, large numbers of abnormal white blood cells (leukemia cells and leukemic blast cells) build up in the blood and bone marrow, crowding out normal blood cells. The low level of normal blood cells can make it harder for the body to get oxygen to its tissues, control bleeding, or fight infections. 
+
+<br /><strong>Lymphoma</strong><br />
+Lymphoma is cancer that begins in lymphocytes (T cells or B cells). These are disease-fighting white blood cells that are part of the immune system. In lymphoma, abnormal lymphocytes build up in lymph nodes and lymph vessels, as well as in other organs of the body.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="topic-section" id="breastcancer">
+    <div style="height: 100px;"></div>
+    <h3 class="topic-heading">breast cancer</h3>
+    <div class="accordion" id="accordionExample2">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne2">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2"
+                    aria-expanded="true" aria-controls="collapseOne2">
+                    effect on body
+                </button>
+            </h2>
+            <div id="collapseOne2" class="accordion-collapse collapse show" aria-labelledby="headingOne2"
+                data-bs-parent="#accordionExample2">
+                <div class="accordion-body">
+                    Breast cancers can start from different parts of the breast. The breast is an organ that sits on top of the upper ribs and chest muscles. There is a left and right breast and each one has mainly glands, ducts, and fatty tissue. In women, the breast makes and delivers milk to feed newborns and infants. The amount of fatty tissue in the breast determines the size of each breast.
+
+The breast has different parts:
+
+    Lobules are the glands that make breast milk. Cancers that start here are called lobular cancers.
+    Ducts are small canals that come out from the lobules and carry the milk to the nipple. This is the most common place for breast cancer to start. Cancers that start here are called ductal cancers.
+    The nipple is the opening in the skin of the breast where the ducts come together and turn into larger ducts so the milk can leave the breast. The nipple is surrounded by slightly darker thicker skin called the areola. A less common type of breast cancer called Paget disease of the breast can start in the nipple.
+    The fat and connective tissue (stroma) surround the ducts and lobules and help keep them in place. A less common type of breast cancer called phyllodes tumor can start in the stroma.
+    Blood vessels and lymph vessels are also found in each breast. Angiosarcoma is a less common type of breast cancer that can start in the lining of these vessels. The lymph system is described below.
+
+A small number of cancers start in other tissues in the breast. These cancers are called sarcomas and lymphomas and are not really thought of as breast cancers.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo2" aria-expanded="false" aria-controls="collapseTwo2">
+                    signs and symtomps
+                </button>
+            </h2>
+            <div id="collapseTwo2" class="accordion-collapse collapse" aria-labelledby="headingTwo2"
+                data-bs-parent="#accordionExample2">
+                <div class="accordion-body">
+                    Knowing how your breasts normally look and feel is an important part of your breast health. Although having regular screening tests for breast cancer is important, mammograms do not find every breast cancer. This means it's also important for you to know what your breasts normally look and feel like, so you’ll be aware of any changes in your breasts.
+
+The most common symptom of breast cancer is a new lump or mass (although most breast lumps are not cancer). A painless, hard mass that has irregular edges is more likely to be cancer, but breast cancers can be also soft, round, tender, or even painful.
+
+Other possible symptoms of breast cancer include:
+
+    <br />- Swelling of all or part of a breast (even if no lump is felt)
+    <br />- Skin dimpling (sometimes looking like an orange peel)
+    <br />- Breast or nipple pain
+    <br />- Nipple retraction (turning inward)
+    <br />- Nipple or breast skin that is red, dry, flaking, or thickened
+    <br />- Nipple discharge (other than breast milk)
+    <br />- Swollen lymph<br /> nodes under the arm or near the collar bone (Sometimes this can be a sign of breast cancer spread even before the original tumor in the breast is large enough to be felt.)
+
+Many of these symptoms can also be caused by benign (non-cancerous) breast conditions. Still, it’s important to have any new breast mass, lump, or other change checked by an experienced health care professional so the cause can be found and treated, if needed.
+
+Remember that knowing what to look for does not take the place of having regular screening for breast cancer. Screening mammography can often help find breast cancer early, before any symptoms appear. Finding breast cancer early gives you a better chance of successful treatment.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree2" aria-expanded="false" aria-controls="collapseThree2">
+                    treatment procedure
+                </button>
+            </h2>
+            <div id="collapseThree2" class="accordion-collapse collapse" aria-labelledby="headingThree2"
+                data-bs-parent="#accordionExample2">
+                <div class="accordion-body">
+                    
+
+Planning cancer treatment can take time and you should talk to your doctor about how long you can expect to wait until treatment starts.  It's important to learn about all your treatment options to make the decision that is best for your situation.<br /><br />
+
+
+Many procedures and drugs are available to treat cancer, with many more being studied. Some are "local" treatments like surgery and radiation therapy, which are used to treat a specific tumor or area of the body. Drug treatments (such as chemotherapy, immunotherapy, or targeted therapy) are often called "systemic" treatments because they  can affect the entire body. Learn about the most common types of treatment for cancer here.
+
+    <br />- Surgery
+    <br />- Chemotherapy
+    <br />- Radiation Therapy
+    <br />- Targeted Therapy
+    <br />- Immunotherapy
+    <br />- Stem Cell or Bone Marrow Transplant
+    <br />- Hormone Therapy<br /><br />
+
+
+There are many different approaches for treating cancer, depending on the type of cancer, how advanced it is, what types of treatment are available, and what the goals of treatment are. Learn about how cancer treatments might be used in certain situations here.
+
+    <br />- Palliative Care
+    <br />- Clinical Trials
+    <br />- Precision or Personalized Medicine
+    <br />- Off-label Drug Use
+    <br />- Biosimilar Drugs
+    <br />- Tumor-agnostic Drugs<br /><br />
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="topic-section" id="oralcancer">
+    <div style="height: 100px;"></div>
+    <h3 class="topic-heading">oral cancer</h3>
+    <div class="accordion" id="accordionExample3">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne3">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne3"
+                    aria-expanded="true" aria-controls="collapseOne3">
+                    effect on body
+                </button>
+            </h2>
+            <div id="collapseOne3" class="accordion-collapse collapse show" aria-labelledby="headingOne3"
+                data-bs-parent="#accordionExample3">
+                <div class="accordion-body"> Oral cancer, also known as mouth cancer, is cancer of the lining of the lips, mouth, or upper throat.[6] In the mouth, it most commonly starts as a painless white patch, that thickens, develops red patches, an ulcer, and continues to grow. When on the lips, it commonly looks like a persistent crusting ulcer that does not heal, and slowly grows.[7] Other symptoms may include difficult or painful swallowing, new lumps or bumps in the neck, a swelling in the mouth, or a feeling of numbness in the mouth or lips.[8]
+
+Risk factors include tobacco and alcohol use.[9][10] Those who use both alcohol and tobacco have a 15 times greater risk of oral cancer than those who use neither.[11] Other risk factors include HPV infection,[12] chewing paan,[13] and sun exposure on the lower lip.[14] Oral cancer is a subgroup of head and neck cancers.[6] Diagnosis is made by biopsy of the concerning area, followed by investigation with CT scan, MRI, PET scan, and examination to determine if it has spread to distant parts of the body.
+
+Oral cancer can be prevented by avoiding tobacco products, limiting alcohol use, sun protection on the lower lip, HPV vaccination, and avoidance of paan. Treatments used for oral cancer can include a combination of surgery (to remove the tumor and regional lymph nodes), radiation therapy, chemotherapy, or targeted therapy. The types of treatments will depend on the size, locations, and spread of the cancer taken into consideration with the general health of the person.[7]
+
+In 2018, oral cancer occurred globally in about 355,000 people, and resulted in 177,000 deaths.[5] Between 1999 and 2015 in the United States, the rate of oral cancer increased 6% (from 10.9 to 11.6 per 100,000). Deaths from oral cancer during this time decreased 7% (from 2.7 to 2.5 per 100,000).[15] Oral cancer has an overall 5 year survival rate of 65% in the United States as of 2015.[4] This varies from 84% if diagnosed when localized, compared to 66% if it has spread to the lymph nodes in the neck, and 39% if it has spread to distant parts of the body.[4] Survival rates also are dependent on the location of the disease in the mouth.[16] 
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo3" aria-expanded="false" aria-controls="collapseTwo3">
+                    signs and symtomps
+                </button>
+            </h2>
+            <div id="collapseTwo3" class="accordion-collapse collapse" aria-labelledby="headingTwo3"
+                data-bs-parent="#accordionExample3">
+                The signs and symptoms of oral cancer depend on the location of the tumor but are generally thin, irregular, white patches in the mouth. They can also be a mix of red and white patches (mixed red and white patches are much more likely to be cancerous when biopsied). The classic warning sign is a persistent rough patch with ulceration, and a raised border that is minimally painful. On the lip, the ulcer is more commonly crusting and dry, and in the pharynx it is more commonly a mass. It can also be associated with a white patch, loose teeth, bleeding gums, persistent ear ache, a feeling of numbness in the lip and chin, or swelling.[17]
+
+When the cancer extends to the throat, there can also be difficulty swallowing (usually a base of tongue HPV16+ cancer) or a visibly enlarged tonsil unilaterally, also from the same etiology,[18] painful swallowing, and an altered voice.[19] Typically, the lesions have very little pain until they become larger and then are associated with a burning sensation.[20] As the lesion spreads to the lymph nodes of the neck, a painless, hard mass will develop. If it spreads elsewhere in the body, general aches can develop, most often due to bone metastasis.[
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree3" aria-expanded="false" aria-controls="collapseThree3">
+                    treatment procedure
+                </button>
+            </h2>
+            <div id="collapseThree3" class="accordion-collapse collapse" aria-labelledby="headingThree3"
+                data-bs-parent="#accordionExample3">
+                <div class="accordion-body">
+                    Planning cancer treatment can take time and you should talk to your doctor about how long you can expect to wait until treatment starts.  It's important to learn about all your treatment options to make the decision that is best for your situation.<br /><br />
+
+
+Many procedures and drugs are available to treat cancer, with many more being studied. Some are "local" treatments like surgery and radiation therapy, which are used to treat a specific tumor or area of the body. Drug treatments (such as chemotherapy, immunotherapy, or targeted therapy) are often called "systemic" treatments because they  can affect the entire body. Learn about the most common types of treatment for cancer here.
+
+    <br />- Surgery
+    <br />- Chemotherapy
+    <br />- Radiation Therapy
+    <br />- Targeted Therapy
+    <br />- Immunotherapy
+    <br />- Stem Cell or Bone Marrow Transplant
+    <br />- Hormone Therapy<br /><br />
+
+
+There are many different approaches for treating cancer, depending on the type of cancer, how advanced it is, what types of treatment are available, and what the goals of treatment are. Learn about how cancer treatments might be used in certain situations here.
+
+    <br />- Palliative Care
+    <br />- Clinical Trials
+    <br />- Precision or Personalized Medicine
+    <br />- Off-label Drug Use
+    <br />- Biosimilar Drugs
+    <br />- Tumor-agnostic Drugs<br /><br />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="topic-section" id="lungcancer">
+    <div style="height: 100px;"></div>
+    <h3 class="topic-heading">lung cancer</h3>
+    <div class="accordion" id="accordionExample4">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne4">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne4"
+                    aria-expanded="true" aria-controls="collapseOne4">
+                    effect on body
+                </button>
+            </h2>
+            <div id="collapseOne4" class="accordion-collapse collapse show" aria-labelledby="headingOne4"
+                data-bs-parent="#accordionExample4">
+                <div class="accordion-body">
+                    Lung cancer, also known as lung carcinoma[8] (since about 98–99% of all lung cancers are carcinomas), is a malignant lung tumor characterized by uncontrolled cell growth in tissues of the lung.[9] Lung carcinomas derive from transformed, malignant cells that originate as epithelial cells, or from tissues composed of epithelial cells. Other lung cancers, such as the rare sarcomas of the lung, are generated by the malignant transformation of connective tissues (i.e. nerve, fat, muscle, bone), which arise from mesenchymal cells. Lymphomas and melanomas (from lymphoid and melanocyte cell lineages) can also rarely result in lung cancer.
+
+In time, this uncontrolled growth can metastasize (spreading beyond the lung) either by direct extension, by entering the lymphatic circulation, or via hematogenous, bloodborne spread – into nearby tissue or other, more distant parts of the body.[10] Most cancers that start in the lung, known as primary lung cancers, are carcinomas. The two main types are small-cell lung carcinoma (SCLC) and non-small-cell lung carcinoma (NSCLC).[3] The most common symptoms are coughing (including coughing up blood), weight loss, shortness of breath, and chest pains.[1]
+
+The vast majority (85%) of cases of lung cancer are due to long-term tobacco smoking.[4] About 10–15% of cases occur in people who have never smoked.[11] These cases are often caused by a combination of genetic factors and exposure to radon gas, asbestos, second-hand smoke, or other forms of air pollution.[4][5][12][13] Lung cancer may be seen on chest radiographs and computed tomography (CT) scans.[14] The diagnosis is confirmed by biopsy, which is usually performed by bronchoscopy or CT-guidance.[3][15]
+
+The major method of prevention is the avoidance of risk factors, including smoking and air pollution.[16] Treatment and long-term outcomes depend on the type of cancer, the stage (degree of spread), and the person's overall health.[14] Most cases are not curable.[3] Common treatments include surgery, chemotherapy, and radiotherapy.[14] NSCLC is sometimes treated with surgery, whereas SCLC usually responds better to chemotherapy and radiotherapy.[17]
+
+Worldwide in 2020, lung cancer occurred in 2.2 million people and resulted in 1.8 million deaths.[6] It is the most common cause of cancer-related death in both men and women.[18] The most common age at diagnosis is 70 years.[2] In most countries the five-year survival rate is around 10 to 20%,[6] while in Japan it is 33%, in Israel 27%, and in the Republic of Korea 25%.[6] Outcomes typically are worse in the developing world.[
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo4" aria-expanded="false" aria-controls="collapseTwo4">
+                    signs and symtomps
+                </button>
+            </h2>
+            <div id="collapseTwo4" class="accordion-collapse collapse" aria-labelledby="headingTwo4"
+                data-bs-parent="#accordionExample4">
+                <div class="accordion-body">
+                    Signs and symptoms that may suggest lung cancer include:[1]
+
+    Respiratory symptoms: coughing, coughing up blood, wheezing, or shortness of breath
+    Systemic symptoms: weight loss, weakness, fever, or clubbing of the fingernails
+    Symptoms due to the cancer mass pressing on adjacent structures: chest pain, bone pain, superior vena cava obstruction, or difficulty swallowing
+
+If the cancer grows in the airways, it may obstruct airflow causing breathing difficulties. The obstruction can also lead to accumulation of secretions behind the blockage, and increase the risk of pneumonia.[1]
+
+Many of the symptoms of lung cancer (poor appetite, weight loss, fever, fatigue) are not specific.[3] In many people, the cancer has already spread beyond the original site by the time they have symptoms and seek medical attention.[20] Symptoms that suggest the presence of metastatic disease include weight loss, bone pain, and neurological symptoms (headaches, fainting, convulsions, or limb weakness).[1] Common sites of spread include the brain, bone, adrenal glands, opposite lung, liver, pericardium, and kidneys.[20] About 10% of people with lung cancer do not have symptoms at diagnosis; these cancers are incidentally found on routine chest radiography.[15]
+
+Depending on the type of tumor, paraneoplastic phenomena – symptoms not due to the local presence of cancer – may initially attract attention to the disease.[21] In lung cancer, these phenomena may include hypercalcemia, syndrome of inappropriate antidiuretic hormone (abnormally concentrated urine and diluted blood), ectopic ACTH production, or Lambert–Eaton myasthenic syndrome (muscle weakness due to autoantibodies). Tumors in the top of the lung, known as Pancoast tumors, may invade the local part of the sympathetic nervous system, resulting in Horner's syndrome (dropping of the eyelid and a small pupil on that side), as well as damage to the brachial plexus.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
+                    treatment procedure
+                </button>
+            </h2>
+            <div id="collapseThree4" class="accordion-collapse collapse" aria-labelledby="headingThree4"
+                data-bs-parent="#accordionExample4">
+                <div class="accordion-body">
+                    Planning cancer treatment can take time and you should talk to your doctor about how long you can expect to wait until treatment starts.  It's important to learn about all your treatment options to make the decision that is best for your situation.<br /><br />
+
+
+Many procedures and drugs are available to treat cancer, with many more being studied. Some are "local" treatments like surgery and radiation therapy, which are used to treat a specific tumor or area of the body. Drug treatments (such as chemotherapy, immunotherapy, or targeted therapy) are often called "systemic" treatments because they  can affect the entire body. Learn about the most common types of treatment for cancer here.
+
+    <br />- Surgery
+    <br />- Chemotherapy
+    <br />- Radiation Therapy
+    <br />- Targeted Therapy
+    <br />- Immunotherapy
+    <br />- Stem Cell or Bone Marrow Transplant
+    <br />- Hormone Therapy<br /><br />
+
+
+There are many different approaches for treating cancer, depending on the type of cancer, how advanced it is, what types of treatment are available, and what the goals of treatment are. Learn about how cancer treatments might be used in certain situations here.
+
+    <br />- Palliative Care
+    <br />- Clinical Trials
+    <br />- Precision or Personalized Medicine
+    <br />- Off-label Drug Use
+    <br />- Biosimilar Drugs
+    <br />- Tumor-agnostic Drugs<br /><br />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="topic-section" id="skincancer">
+    <div style="height: 100px;"></div>
+    <h3 class="topic-heading">skin cancer</h3>
+    <div class="accordion" id="accordionExample5">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne5">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne5"
+                    aria-expanded="true" aria-controls="collapseOne5">
+                    effect on body
+                </button>
+            </h2>
+            <div id="collapseOne5" class="accordion-collapse collapse show" aria-labelledby="headingOne5"
+                data-bs-parent="#accordionExample5">
+                <div class="accordion-body">
+                    Skin cancers are cancers that arise from the skin. They are due to the development of abnormal cells that have the ability to invade or spread to other parts of the body.[10] There are three main types of skin cancers: basal-cell skin cancer (BCC), squamous-cell skin cancer (SCC) and melanoma.[1] The first two, along with a number of less common skin cancers, are known as nonmelanoma skin cancer (NMSC).[5][11] Basal-cell cancer grows slowly and can damage the tissue around it but is unlikely to spread to distant areas or result in death.[5] It often appears as a painless raised area of skin that may be shiny with small blood vessels running over it or may present as a raised area with an ulcer.[1] Squamous-cell skin cancer is more likely to spread.[5] It usually presents as a hard lump with a scaly top but may also form an ulcer.[2] Melanomas are the most aggressive. Signs include a mole that has changed in size, shape, color, has irregular edges, has more than one color, is itchy or bleeds.[3]
+
+More than 90% of cases are caused by exposure to ultraviolet radiation from the Sun.[4] This exposure increases the risk of all three main types of skin cancer.[4] Exposure has increased, partly due to a thinner ozone layer.[5][12] Tanning beds are another common source of ultraviolet radiation.[4] For melanomas and basal-cell cancers, exposure during childhood is particularly harmful.[6] For squamous-cell skin cancers, total exposure, irrespective of when it occurs, is more important.[4] Between 20% and 30% of melanomas develop from moles.[6] People with lighter skin are at higher risk[1][13] as are those with poor immune function such as from medications or HIV/AIDS.[5][14] Diagnosis is by biopsy.[3]
+
+Decreasing exposure to ultraviolet radiation and the use of sunscreen appear to be effective methods of preventing melanoma and squamous-cell skin cancer.[6][7] It is not clear if sunscreen affects the risk of basal-cell cancer.[7] Nonmelanoma skin cancer is usually curable.[5] Treatment is generally by surgical removal but may, less commonly, involve radiation therapy or topical medications such as fluorouracil.[1] Treatment of melanoma may involve some combination of surgery, chemotherapy, radiation therapy and targeted therapy.[3] In those people whose disease has spread to other areas of the body, palliative care may be used to improve quality of life.[3] Melanoma has one of the higher survival rates among cancers, with over 86% of people in the UK and more than 90% in the United States surviving more than 5 years.[15][16]
+
+Skin cancer is the most common form of cancer, globally accounting for at least 40% of cancer cases.[5][17] The most common type is nonmelanoma skin cancer, which occurs in at least 2–3 million people per year.[6][18] This is a rough estimate, however, as good statistics are not kept.[1] Of nonmelanoma skin cancers, about 80% are basal-cell cancers and 20% squamous-cell skin cancers.[11] Basal-cell and squamous-cell skin cancers rarely result in death.[6] In the United States, they were the cause of less than 0.1% of all cancer deaths.[1] Globally in 2012, melanoma occurred in 232,000 people and resulted in 55,000 deaths.[6] White people in Australia, New Zealand and South Africa have the highest rates of melanoma in the world.[6][19] The three main types of skin cancer have become more common in the last 20 to 40 years, especially regions where the population is predominantly white.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo5" aria-expanded="false" aria-controls="collapseTwo5">
+                    signs and symtomps
+                </button>
+            </h2>
+            <div id="collapseTwo5" class="accordion-collapse collapse" aria-labelledby="headingTwo5"
+                data-bs-parent="#accordionExample5">
+                <div class="accordion-body">
+                    There are a variety of different skin cancer symptoms. These include changes in the skin that do not heal, ulcering in the skin, discolored skin, and changes in existing moles, such as jagged edges to the mole, enlargement of the mole, changes in color, the way it feels or if it bleeds. Other common signs of skin cancer can be painful lesion that itches or burns and large brownish spot with darker speckles.[22]
+Basal-cell skin cancer
+
+Basal-cell skin cancer (BCC) usually presents as a raised, smooth, pearly bump on the sun-exposed skin of the head, neck, torso or shoulders. Sometimes small blood vessels (called telangiectasia) can be seen within the tumor. Crusting and bleeding in the center of the tumor frequently develops. It is often mistaken for a sore that does not heal. This form of skin cancer is the least deadly, and with proper treatment can be eliminated, often without significant scarring.
+Squamous-cell skin cancer
+
+Squamous-cell skin cancer (SCC) is commonly a red, scaling, thickened patch on sun-exposed skin. Some are firm hard nodules and dome shaped like keratoacanthomas. Ulceration and bleeding may occur. When SCC is not treated, it may develop into a large mass. Squamous-cell is the second most common skin cancer. It is dangerous, but not nearly as dangerous as a melanoma.
+Melanoma
+
+Most melanoma consist of various colours from shades of brown to black. A small number of melanoma are pink, red or fleshy in colour; these are called amelanotic melanoma and tend to be more aggressive. Warning signs of malignant melanoma include change in the size, shape, color or elevation of a mole. Other signs are the appearance of a new mole during adulthood or pain, itching, ulceration, redness around the site, or bleeding at the site. An often-used mnemonic is "ABCDE", where A is for "asymmetrical", B for "borders" (irregular: "Coast of Maine sign"), C for "color" (variegated), D for "diameter" (larger than 6 mm – the size of a pencil eraser) and E for "evolving."[23][24]
+Other
+Merkel cell carcinomas are most often rapidly growing, non-tender red, purple or skin colored bumps that are not painful or itchy. They may be mistaken for a cyst or another type of cancer
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree5" aria-expanded="false" aria-controls="collapseThree5">
+                    treatment procedure
+                </button>
+            </h2>
+            <div id="collapseThree5" class="accordion-collapse collapse" aria-labelledby="headingThree5"
+                data-bs-parent="#accordionExample5">
+                <div class="accordion-body">
+                    Planning cancer treatment can take time and you should talk to your doctor about how long you can expect to wait until treatment starts.  It's important to learn about all your treatment options to make the decision that is best for your situation.<br /><br />
+
+
+Many procedures and drugs are available to treat cancer, with many more being studied. Some are "local" treatments like surgery and radiation therapy, which are used to treat a specific tumor or area of the body. Drug treatments (such as chemotherapy, immunotherapy, or targeted therapy) are often called "systemic" treatments because they  can affect the entire body. Learn about the most common types of treatment for cancer here.
+
+    <br />- Surgery
+    <br />- Chemotherapy
+    <br />- Radiation Therapy
+    <br />- Targeted Therapy
+    <br />- Immunotherapy
+    <br />- Stem Cell or Bone Marrow Transplant
+    <br />- Hormone Therapy<br /><br />
+
+
+There are many different approaches for treating cancer, depending on the type of cancer, how advanced it is, what types of treatment are available, and what the goals of treatment are. Learn about how cancer treatments might be used in certain situations here.
+
+    <br />- Palliative Care
+    <br />- Clinical Trials
+    <br />- Precision or Personalized Medicine
+    <br />- Off-label Drug Use
+    <br />- Biosimilar Drugs
+    <br />- Tumor-agnostic Drugs<br /><br />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="topic-section" id="bloodcancer">
+    <div style="height: 100px;"></div>
+    <h3 class="topic-heading">blood cancer</h3>
+    <div class="accordion" id="accordionExample6">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne6">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne6"
+                    aria-expanded="true" aria-controls="collapseOne6">
+                    effect on body
+                </button>
+            </h2>
+            <div id="collapseOne6" class="accordion-collapse collapse show" aria-labelledby="headingOne6"
+                data-bs-parent="#accordionExample6">
+                <div class="accordion-body">
+                    Tumors of the hematopoietic and lymphoid tissues (American English) or tumours of the haematopoietic and lymphoid tissues (British English) are tumors that affect the blood, bone marrow, lymph, and lymphatic system.[1][2] Because these tissues are all intimately connected through both the circulatory system and the immune system, a disease affecting one will often affect the others as well, making myeloproliferation and lymphoproliferation (and thus the leukemias and the lymphomas) closely related and often overlapping problems. While uncommon in solid tumors, chromosomal translocations are a common cause of these diseases. This commonly leads to a different approach in diagnosis and treatment of hematological malignancies. Hematological malignancies are malignant neoplasms ("cancer"), and they are generally treated by specialists in hematology and/or oncology. In some centers "hematology/oncology" is a single subspecialty of internal medicine while in others they are considered separate divisions (there are also surgical and radiation oncologists). Not all hematological disorders are malignant ("cancerous"); these other blood conditions may also be managed by a hematologist.
+
+Hematological malignancies may derive from either of the two major blood cell lineages: myeloid and lymphoid cell lines. The myeloid cell line normally produces granulocytes, erythrocytes, thrombocytes, macrophages and mast cells; the lymphoid cell line produces B, T, NK and plasma cells. Lymphomas, lymphocytic leukemias, and myeloma are from the lymphoid line, while acute and chronic myelogenous leukemia, myelodysplastic syndromes and myeloproliferative diseases are myeloid in origin.
+
+A subgroup of them are more severe and are known as haematological malignancies (British English)/hematological malignancies (American English) or blood cancer. They may also be referred to as liquid tumors.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo6" aria-expanded="false" aria-controls="collapseTwo6">
+                    signs and symtomps
+                </button>
+            </h2>
+            <div id="collapseTwo6" class="accordion-collapse collapse" aria-labelledby="headingTwo6"
+                data-bs-parent="#accordionExample6">
+                <div class="accordion-body">
+                    The most common symptoms in children are easy bruising, pale skin, fever, and an enlarged spleen or liver.[34]
+
+Damage to the bone marrow, by way of displacing the normal bone marrow cells with higher numbers of immature white blood cells, results in a lack of blood platelets, which are important in the blood clotting process. This means people with leukemia may easily become bruised, bleed excessively, or develop pinprick bleeds (petechiae).[35]
+
+White blood cells, which are involved in fighting pathogens, may be suppressed or dysfunctional. This could cause the person's immune system to be unable to fight off a simple infection or to start attacking other body cells. Because leukemia prevents the immune system from working normally, some people experience frequent infection, ranging from infected tonsils, sores in the mouth, or diarrhea to life-threatening pneumonia or opportunistic infections.[36]
+
+Finally, the red blood cell deficiency leads to anemia, which may cause dyspnea and pallor.[37]
+
+Some people experience other symptoms, such as fevers, chills, night sweats, weakness in the limbs, feeling fatigued and other common flu-like symptoms. Some people experience nausea or a feeling of fullness due to an enlarged liver and spleen; this can result in unintentional weight loss. Blasts affected by the disease may come together and become swollen in the liver or in the lymph nodes causing pain and leading to nausea.[38]
+
+If the leukemic cells invade the central nervous system, then neurological symptoms (notably headaches) can occur. Uncommon neurological symptoms like migraines, seizures, or coma can occur as a result of brain stem pressure. All symptoms associated with leukemia can be attributed to other diseases. Consequently, leukemia is always diagnosed through medical tests.
+
+The word leukemia, which means 'white blood', is derived from the characteristic high white blood cell count that presents in most affected people before treatment. The high number of white blood cells is apparent when a blood sample is viewed under a microscope, with the extra white blood cells frequently being immature or dysfunctional. The excessive number of cells can also interfere with the level of other cells, causing further harmful imbalance in the blood count.[citation needed]
+
+Some people diagnosed with leukemia do not have high white blood cell counts visible during a regular blood count. This less-common condition is called aleukemia. The bone marrow still contains cancerous white blood cells that disrupt the normal production of blood cells, but they remain in the marrow instead of entering the bloodstream, where they would be visible in a blood test. For a person with aleukemia, the white blood cell counts in the bloodstream can be normal or low. Aleukemia can occur in any of the four major types of leukemia, and is particularly common in hairy cell leukemia.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree6" aria-expanded="false" aria-controls="collapseThree6">
+                    treatment procedure
+                </button>
+            </h2>
+            <div id="collapseThree6" class="accordion-collapse collapse" aria-labelledby="headingThree6"
+                data-bs-parent="#accordionExample6">
+                <div class="accordion-body">
+                    Planning cancer treatment can take time and you should talk to your doctor about how long you can expect to wait until treatment starts.  It's important to learn about all your treatment options to make the decision that is best for your situation.<br /><br />
+
+
+Many procedures and drugs are available to treat cancer, with many more being studied. Some are "local" treatments like surgery and radiation therapy, which are used to treat a specific tumor or area of the body. Drug treatments (such as chemotherapy, immunotherapy, or targeted therapy) are often called "systemic" treatments because they  can affect the entire body. Learn about the most common types of treatment for cancer here.
+
+    <br />- Surgery
+    <br />- Chemotherapy
+    <br />- Radiation Therapy
+    <br />- Targeted Therapy
+    <br />- Immunotherapy
+    <br />- Stem Cell or Bone Marrow Transplant
+    <br />- Hormone Therapy<br /><br />
+
+
+There are many different approaches for treating cancer, depending on the type of cancer, how advanced it is, what types of treatment are available, and what the goals of treatment are. Learn about how cancer treatments might be used in certain situations here.
+
+    <br />- Palliative Care
+    <br />- Clinical Trials
+    <br />- Precision or Personalized Medicine
+    <br />- Off-label Drug Use
+    <br />- Biosimilar Drugs
+    <br />- Tumor-agnostic Drugs<br /><br />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="topic-section" id="prostatecancer">
+    <div style="height: 100px;"></div>
+    <h3 class="topic-heading">prostate cancer</h3>
+    <div class="accordion" id="accordionExample7">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne7">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne7"
+                    aria-expanded="true" aria-controls="collapseOne7">
+                    effect on body
+                </button>
+            </h2>
+            <div id="collapseOne7" class="accordion-collapse collapse show" aria-labelledby="headingOne7"
+                data-bs-parent="#accordionExample7">
+                <div class="accordion-body">
+                    Prostate cancer is cancer of the prostate. The prostate is a gland in the male reproductive system that surrounds the urethra just below the bladder.[6] Most prostate cancers are slow growing.[1][3] Cancerous cells may spread to other areas of the body, particularly the bones and lymph nodes.[7][8][9] It may initially cause no symptoms.[1] In later stages, symptoms include pain or difficulty urinating, blood in the urine, or pain in the pelvis or back.[2] Benign prostatic hyperplasia may produce similar symptoms.[1] Other late symptoms include fatigue, due to low levels of red blood cells.[1]
+
+Factors that increase the risk of prostate cancer include older age, family history and race.[3][10] About 99% of cases occur after age 50.[3] A first-degree relative with the disease increases the risk two- to three-fold.[3] Other factors include a diet high in processed meat and red meat,[3] while the risk from a high intake of milk products is inconclusive.[11] An association with gonorrhea has been found, although no reason for this relationship has been identified.[12] An increased risk is associated with the BRCA mutations.[13] Diagnosis is by biopsy.[2] Medical imaging may be done to assess whether metastasis is present.[2]
+
+Prostate cancer screening, including prostate-specific antigen (PSA) testing, increases cancer detection but whether it improves outcomes is controversial.[3][14][15][16] Informed decision making is recommended for those 55 to 69 years old.[17][18] Testing, if carried out, is more appropriate for those with a longer life expectancy.[19] Although 5α-reductase inhibitors appear to decrease low-grade cancer risk, they do not affect high-grade cancer risk, and are not recommended for prevention.[3] Vitamin or mineral supplementation does not appear to affect risk.[3][20]
+
+Many cases are managed with active surveillance or watchful waiting.[2] Other treatments may include a combination of surgery, radiation therapy, hormone therapy, or chemotherapy.[2] Tumors limited to the prostate may be curable.[1] Pain medications, bisphosphonates, and targeted therapy,[21] among others, may be useful.[2] Outcomes depend on age, health status and how aggressive and extensive the cancer is.[2] Most men with prostate cancer do not die from it.[2] The United States five-year survival rate is 98%.[4]
+
+Globally, it is the second-most common cancer. It is the fifth-leading cause of cancer-related death in men.[22] In 2018, it was diagnosed in 1.2 million and caused 359,000 deaths.[5] It was the most common cancer in males in 84 countries,[3] occurring more commonly in the developed world.[23] Rates have been increasing in the developing world.[23] Detection increased significantly in the 1980s and 1990s in many areas due to increased PSA testing.[3] One study reported prostate cancer in 30% to 70% of Russian and Japanese men over age 60 who had died of unrelated causes.[
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo7">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo7" aria-expanded="false" aria-controls="collapseTwo7">
+                    signs and symtomps
+                </button>
+            </h2>
+            <div id="collapseTwo7" class="accordion-collapse collapse" aria-labelledby="headingTwo7"
+                data-bs-parent="#accordionExample7">
+                <div class="accordion-body">
+                    Early prostate cancer usually has no clear symptoms. When they do appear, they are often similar to those of benign prostatic hyperplasia. These include frequent urination, nocturia (increased urination at night), difficulty starting and maintaining a steady stream of urine, hematuria (blood in the urine), dysuria (painful urination) as well as fatigue due to anemia, and bone pain.[24] One study found that about a third of diagnosed patients had one or more such symptoms.[25]
+
+Prostate cancer is associated with urinary dysfunction as the prostate gland surrounds the prostatic urethra.[26][27] Changes within the gland directly affect urinary function. Because the vas deferens deposits seminal fluid into the prostatic urethra, and secretions from the prostate are included in semen content, prostate cancer may also cause problems with sexual function and performance, such as difficulty achieving erection or painful ejaculation.[25]
+
+Metastatic prostate cancer can cause additional symptoms. The most common symptom is bone pain, often in the vertebrae (bones of the spine), pelvis, or ribs.[28] Spread of cancer into other bones such as the femur is usually to the part of the bone nearer to the prostate. Prostate cancer in the spine can compress the spinal cord, causing tingling, leg weakness, and urinary and fecal incontinence.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingThree7">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree7" aria-expanded="false" aria-controls="collapseThree7">
+                    treatment procedure
+                </button>
+            </h2>
+            <div id="collapseThree7" class="accordion-collapse collapse" aria-labelledby="headingThree7"
+                data-bs-parent="#accordionExample7">
+                <div class="accordion-body">
+                    Planning cancer treatment can take time and you should talk to your doctor about how long you can expect to wait until treatment starts.  It's important to learn about all your treatment options to make the decision that is best for your situation.<br /><br />
+
+
+Many procedures and drugs are available to treat cancer, with many more being studied. Some are "local" treatments like surgery and radiation therapy, which are used to treat a specific tumor or area of the body. Drug treatments (such as chemotherapy, immunotherapy, or targeted therapy) are often called "systemic" treatments because they  can affect the entire body. Learn about the most common types of treatment for cancer here.
+
+    <br />- Surgery
+    <br />- Chemotherapy
+    <br />- Radiation Therapy
+    <br />- Targeted Therapy
+    <br />- Immunotherapy
+    <br />- Stem Cell or Bone Marrow Transplant
+    <br />- Hormone Therapy<br /><br />
+
+
+There are many different approaches for treating cancer, depending on the type of cancer, how advanced it is, what types of treatment are available, and what the goals of treatment are. Learn about how cancer treatments might be used in certain situations here.
+
+    <br />- Palliative Care
+    <br />- Clinical Trials
+    <br />- Precision or Personalized Medicine
+    <br />- Off-label Drug Use
+    <br />- Biosimilar Drugs
+    <br />- Tumor-agnostic Drugs<br /><br />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="topic-section" id="prevent">
+    <div style="height: 100px;"></div>
+    <h3 class="topic-heading">cancer prevention</h3>
+    <div class="accordion" id="accordionExample8">
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingOne8">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne8"
+                    aria-expanded="true" aria-controls="collapseOne8">
+                    screening guidelines
+                </button>
+            </h2>
+            <div id="collapseOne8" class="accordion-collapse collapse show" aria-labelledby="headingOne8"
+                data-bs-parent="#accordionExample8">
+                <div class="accordion-body">
+                    
+
+Cancer screening is the process of checking for cancer when there are no symptoms. The methods used to detect cancer are often called screening tests and are a great step towards cancer prevention. Some types of screening tests performed by our cancer specialists and cancer doctors include:
+
+Physical examinations
+
+Inspections of specific areas of the body used to help detect abnormalities (e.g., clinical breast examination for breast cancer, digital rectal examination for prostate and rectal cancers).
+
+Imaging tests
+
+Tests that produce pictures of areas within the body, (e.g., x-ray, mammography for breast cancer).
+
+Laboratory tests
+
+Tests that check; blood, urine, and other body fluids and tissues (e.g., fecal occult blood test for colorectal cancer, Pap test for cervical cancer).
+
+People who are at increased risk for certain cancers may need to follow a different screening schedule, such as starting at an earlier age or being screened more often. Those with symptoms that could be related to cancer should see their cancer doctor right away.
+
+    Learn more about genetic screening for cancer.
+
+The following cancer screening guidelines are recommended for those at average risk for cancer (unless otherwise specified) and without any specific symptoms.
+Cancer-related Checkup
+
+For people aged 20 or older having periodic health exams, a cancer-related checkup should include health counseling, and depending on a person's age and gender, might include exams with a family or for cancers of the thyroid, oral cavity, skin, lymph nodes, testes, and ovaries, as well as for some non-malignant (non-cancerous) diseases. Your doctor will help you determine the tests you should have.
+
+Special screening guidelines for certain cancer sites are recommended as outlined below.
+Breast Cancer Screening Guidelines
+
+Overview
+
+The lifetime risk (to age 85) of a woman developing breast cancer in 1940 was 5% or 1 in 20; the risk is now 12.6% or 1 in 8. In women 40-49 years of age there is a 1 in 66 risk of developing breast cancer compared with a 1 in 40 risk among women in the 50-59 year age group.
+
+Randomized controlled trials have demonstrated reduced mortality rates (20-40%) from breast cancer among women invited to undergo screening mammography compared with control groups.
+
+Although statistically significant benefits/reductions in breast cancer mortality are delayed 10 to 15 years among women 40-49 years of age at the time of screening, several of the screening trials have reported a benefit (23-44%) from screening women 40-49 years of age.
+
+The benefit of mammography is related to early detection. Regardless of the histological grade of a tumor, a greater than 90% ten year survival has been reported in 40-74 year old women diagnosed with tumors that are 10 mm or smaller in size.
+
+The effectiveness of any screening program will depend on screening frequency, compliance with screening recommendations and the quality of the screening test.
+
+In establishing screening frequencies, breast cancer growth rates need to be considered. The sojourn time (average time for mammographically detectable, preclinical cancers to become clinically apparent) for all breast cancer types is shorter for pre-menopausal women compared with post-menopausal women supporting annual screening in 40-49 year old women: 1.8 years in 40-49 year old women and 3.5 years in women 50 years of age or older.
+
+Women should perform a monthly breast self-examination starting at age 20.
+
+Although monthly breast self exams have not been proven to reduce the death rate from breast cancer, it is often a lump or other change that a woman notices in her own breast. Because this free test is the way in which many breast cancers are detected, and because it is important that women become familiar with the way their breasts feel a monthly breast self-exam is recommended for all women beginning at the age of 20.
+
+Other screening guidelines include:
+
+    Annual breast physical examination by a health care provider starting at age 40.
+    Annual screening mammography starting at age 40. The frequency of screening for women between the ages of 40 and 49 may be decreased to every two years if determined appropriate by both the patient and physician.
+    Women in high-risk categories (first degree relative with breast cancer; personal history of breast cancer; prior biopsy with atypical ductal hyperplasia or lobular carcinoma in situ) may want to consider starting screening at age 30.
+
+Cervical Cancer Screening Guidelines
+
+Overview
+
+Cytologic screening (Papanicolaou or Pap smears) represents one of the most successful screening efforts of modern medicine. The morbidity and mortality secondary to cervical cancer has substantially decreased in adequately screened populations. Patients, however, need to understand that Pap smears are intended to be a "screening" not a "diagnostic" test. For any screening test there is an inherent false negative rate which is approximately 10 to 20% for Pap smears. In spite of the false negative tests, the success of the cervical cytology screening program has led patients to expect 100% accuracy. This has produced a flurry of medicolegal action and governmental regulations leading to a substantial increase in the cost of and the introduction of expensive new technologies of unproven benefit. Patients need to understand that because of the screening nature of Pap smears, successful screening requires multiple repeat examinations and a minimization of risk factors.
+Recommendations for Cervical Cancer Screening
+
+Low risk patients
+
+    Sexually active or 18 years of age and no increased risk factors
+        Pap smear for three (3) consecutive years
+        After three satisfactory, normal annual Pap smears - Pap smear every 3 years
+    Age 60 with regular prior negative screening tests and no increased risk factors
+        Discontinue screening
+    Hysterectomy for benign gynecologic disease
+        Discontinue screening
+
+Increased risk patients
+
+    Annual Pap smear
+    Annual pelvic exam
+
+Increased risk is defined by the presence of any one of the following:
+
+    Infection with certain types of human papilloma virus (HPV)
+    HIV - positive
+    Cigarette smoking
+    Multiple sexual partners
+    Prior abnormal Pap smear or cervical dysplasia
+
+Colorectal Cancer Screening Guidelines
+
+Cancer of the large bowel (the colon and rectum) is the third most common form of cancer in the United States, diagnosed in 130,000 Americans annually. Fortunately, with advances in early detection and treatment, colorectal cancer is one of the more curable forms of the disease. Most early forms of colon and rectal cancer cause no symptoms, which makes screening especially important. When symptoms do occur the cancer may already be quite advanced.
+
+Although there are many types of colorectal polyps only adenomas are associated with an increased risk of colorectal cancer. Adenomatous polyps are pre-cancerous (benign) growths on the lining of the colon and rectum. Almost all colorectal cancers begin as an adenomatous polyp, a growth in the tissues lining the colon and rectum. Cancer develops when these polyps grow and their cells start to invade surrounding tissue. Removal of polyps can prevent the development of colorectal cancer. Pre-cancerous polyps can be removed painlessly using a flexible lighted tube called a colonoscope. If caught in its early stages, cancer of the colon and rectum is curable in over 90% of patients.
+
+We would recommend the following screening guidelines for colorectal cancer in the general population beginning at age 45
+
+    Colonoscopy every 10 years OR
+    Yearly stool test for blood (hemoccult) and a flexible sigmoidoscopy every 5 years.
+
+While all Americans are at risk for getting cancer of the colon and rectum, some people are at particularly high risk. For those people, screening for colon cancer should be more frequent and include a full colonoscopy.
+
+There are two main risk factors to consider: Personal history of colorectal polyps or cancer and family history of colorectal polyps or cancer. If you have a family history of colorectal cancer, your risk and the screening recommendations will depend on how many people in your family are affected and at what age they were diagnosed. Below are listed the levels of risk according to personal or family history and the screening recommendations.
+History Category Screening Recommendations
+
+Average Risk
+
+Your risk is not significantly different than the average population.
+
+    Age 45 without a personal or family history of colorectal adenomatous polyps or cancer OR
+    One cousin, aunt, uncle or grandparent with colorectal adenomatous polyps or cancer.
+
+Screening Recommendation: A colonoscopy every 10 years beginning at age 45 is preferable. The alternative would be a yearly stool test for blood (hemoccult) and a flexible sigmoidoscopy every 5 years.
+
+Some Risk
+
+Your risk for colon cancer is approximately twice the average risk.
+
+    One parent, brother or sister with colorectal polyps or cancer who was diagnosed older than age 60.
+
+Screening Recommendation: Colonoscopy every 10 years (as described above) beginning at age 40.
+
+Medium Risk
+
+    Personal history of adenomatous polyps or cancer Or
+    One parent, brother, sister or child with colorectal cancer or adenomatous polyps, who was diagnosed at age 60 or less Or
+    Two first degree relatives (on same side of family) with colorectal cancer or adenomatous polyps (parent, brother or sister or child).
+
+Screening Recommendation: Colonoscopies at intervals dependent on size, number and pathology of polyps found on prior colonoscopy.
+
+High Risk
+
+    Three or more relatives with colorectal adenomatous polyps or cancer, especially if one is age 50 or less at diagnosis.
+
+Screening Recommendation: Colonoscopy beginning 10 years earlier than the age at which your youngest relative was diagnosed, or when you are age 40, whichever is younger. Interval is every 5 years or earlier dependent on findings of the colonoscopy. If you are at high risk, you should be assessed by specialists in inherited syndromes and have genetic counseling. You may be eligible for testing to see if you have inherited a gene that puts you at risk for colon cancer. Screening recommendations will be provided as part of your assessment.
+
+Note: If you have a personal history of colorectal polyps or cancer and a family history in any category you may be at high risk. Consider contacting the Hereditary Colon Cancer Registry, a family coordinator will arrange an appointment in the Center for Personalized Genetic Healthcare. Call 216.445.2050 or 800.223.2273 ext. 5-2050
+Prostate Cancer Screening Guidelines
+
+While there is no information yet available that can tell us whether screening for prostate cancer makes a difference in how long a patient will live after his prostate cancer is discovered, we still recommend following screening guidelines.
+
+Recommendations for Prostate Cancer Screening according to physicians at the Cleveland Clinic
+
+The following should be offered annually:
+
+    Annual digital rectal exam (DRE) and PSA counseling for all men beginning at age 45 - 50 who have at least a 10-year life expectancy.
+    Annual DRE and PSA counseling beginning at age 40 for African-Americans and those with a positive family history of prostate cancer.
+
+The American College of Physicians recommends that all men who are considering DRE and PSA counseling should consider the following:
+
+    The benefits of one-time or repeated screening and aggressive treatment of prostate cancer have not yet been proven.
+    Digital rectal examination (DRE) and PSA measurement can both have false-positive and false-negative results.
+    The probability that further invasive evaluation will be required as a result of testing is relatively high.
+    Aggressive therapy is necessary to realize any benefit from the discovery of a tumor.
+    A small risk for early death and a significant risk for chronic illness, particularly with regard to sexual and urinary function, are associated with these treatments.
+    Early treatment may save lives.
+    Early detection and treatment may head-off future cancer-related illness
+
+
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="headingTwo8">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo8" aria-expanded="false" aria-controls="collapseTwo8">
+                    healthy lifestyle
+                </button>
+            </h2>
+            <div id="collapseTwo8" class="accordion-collapse collapse" aria-labelledby="headingTwo8"
+                data-bs-parent="#accordionExample8">
+                <div class="accordion-body">
+                    <br />- Stay away from tobacco<br />
+
+There is no safe form of tobacco. If you smoke cigarettes or use other types of tobacco products, it's best to stop. It's also important to stay away from tobacco smoke (secondhand smoke). Both using tobacco products and being exposed to tobacco smoke can cause cancer as well as many other health problems. If you don't use tobacco products, you can help others by encouraging the people around you to quit. Call us at 1-800-227-2345 for help, or see How to Quit Smoking or Smokeless Tobacco to learn more about quitting.
+<br />- Get to and stay at a healthy weight<br />
+
+Being overweight or obese can increase your risk for many types of cancer. You can control your weight with the choices you make about healthy eating and exercise:
+- Avoiding excessive weight gain throughout life
+- Balance the calories you take in with the amount of physical activity you do
+
+If you are overweight, try to get to a healthy weight and stay there. Losing even a small amount of weight has health benefits and is a good place to start. Watching your portion sizes is an important part of weight control – especially for foods high in fat and sugar. Low-fat and fat-free doesn’t always mean low-calorie, so read labels and try to eat vegetables, fruits, and whole grains in the place of higher-calorie foods.
+<br />- Get moving
+
+<br /> Adults: Each week, get at least 150-300 minutes of moderate-intensity physical activity  or 75-150 minutes of vigorous-intensity activity (or a combination of these). Getting to or doing more than the upper limit of 300 minutes is ideal.
+
+<br /> Children and teens: Get at least 1 hour of moderate or vigorous intensity activity every day.
+
+Moderate activity is anything that makes you breathe as hard as you do during a brisk walk. During moderate activities, you’ll notice a slight increase in heart rate and breathing. You should be able to talk, but not sing during the activity.
+
+Vigorous activities are performed at a higher intensity. They cause an increased heart rate, sweating, and a faster breathing rate.
+
+<br />- Don’t be a couch potato - limit the amount of time you spend sitting or lying down.
+
+Doing some physical activity above usual activities, no matter what one’s level of activity, can have many health benefits.
+Eat healthy
+
+Follow a healthy eating pattern that includes plenty of fruits, vegetables, and whole grains, and limits or avoids red and processed meats, sugary drinks, and highly processed foods
+<br />- <strong>Never drink alcohol</strong>
+
+
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</section>

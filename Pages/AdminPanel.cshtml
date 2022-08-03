@@ -1,0 +1,64 @@
+﻿@page
+@model NonProfitSiteV3.Pages.AdminPanelModel
+@{
+}
+
+<link rel="stylesheet" href="~/css/LumenTheme.css" asp-append-version="true" />
+
+
+<div style="height: 90px;"></div>
+<section class="short-intro" style="z-index: 10;">
+    <h1>admin panel</h1>
+</section>
+<style>
+    .short-intro {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background: #36454F;
+    height: fit-content;
+    }
+    .short-intro h1 {
+    color: lawngreen;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    }
+</style>
+<section class="container-fluid" style="display: flex; justify-content: center; align-items: center; flex-direction: column;
+width: 100%; border-radius: 20px; background: cyan;">
+    <h1 style="text-transform: capitalize;">Welcome to admin panel</h1>
+    <div style="height: 5px; width: 100%; background: red;"></div>
+    <p style="text-transform: capitalize; margin: 1rem; text-align: center;">navigate to your desired page to perform admin operation</p>
+    <ul style="list-style: none; display: flex; justify-content: center; align-items: center; flex-wrap: wrap;">
+        <li class="mb-3" style="margin: 1rem;">
+            <a class="btn btn-success" asp-page="/Forms/DonationForm/Index">Donation List</a>
+        </li>
+        <li class="mb-3" style="margin: 1rem;">
+            <a class="btn btn-success" asp-page="/Forms/FinancialAidForm/Index">Financial Aid request List</a>
+        </li>
+        <li class="mb-3" style="margin: 1rem;">
+            <a class="btn btn-success" asp-page="/Forms/BloodDonerForm/Index">Blood Bank</a>
+        </li>
+        <li class="mb-3" style="margin: 1rem;">
+            <a class="btn btn-success" asp-page="/Lists/RegisteredVolunteersList/Index">Registered Volunteers List</a>
+        </li>
+        <li class="mb-3" style="margin: 1rem;">
+            <a class="btn btn-success" asp-page="/Forms/VolunteerApplicationForm/Index">Volunteer Applicant List</a>
+        </li>
+        <li class="mb-3" style="margin: 1rem;">
+            <a class="btn btn-success" asp-page="/Forms/VolunteerRequestForm/Index">Volunteer Aid Request List</a>
+        </li>
+        <li class="mb-3" style="margin: 1rem;">
+            <a class="btn btn-success" asp-page="/Lists/DoctorsListControl/IndexAdmin">Doctors List</a>
+        </li>
+        <li class="mb-3" style="margin: 1rem;">
+            <a class="btn btn-success" asp-page="/Lists/TCListControl/IndexAdmin">Cancer Prevention Facility List</a>
+        </li>
+        <li class="mb-3" style="margin: 1rem;">
+            <a class="btn btn-success" asp-page="/Lists/EventsListAdmin/Index">Events</a>
+        </li>
+    </ul>
+</section>

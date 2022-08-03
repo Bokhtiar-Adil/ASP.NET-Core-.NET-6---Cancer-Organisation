@@ -1,0 +1,55 @@
+﻿@page
+@model NonProfitSiteV3.Pages.Lists.TCListControl.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>TreatmentCenters</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="TreatmentCenters.TC_Id" />
+            <div class="form-group">
+                <label asp-for="TreatmentCenters.TC_name" class="control-label"></label>
+                <input asp-for="TreatmentCenters.TC_name" class="form-control" />
+                <span asp-validation-for="TreatmentCenters.TC_name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TreatmentCenters.TC_description" class="control-label"></label>
+                <input asp-for="TreatmentCenters.TC_description" class="form-control" />
+                <span asp-validation-for="TreatmentCenters.TC_description" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TreatmentCenters.TC_address" class="control-label"></label>
+                <input asp-for="TreatmentCenters.TC_address" class="form-control" />
+                <span asp-validation-for="TreatmentCenters.TC_address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TreatmentCenters.TC_contact" class="control-label"></label>
+                <input asp-for="TreatmentCenters.TC_contact" class="form-control" />
+                <span asp-validation-for="TreatmentCenters.TC_contact" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TreatmentCenters.TC_email" class="control-label"></label>
+                <input asp-for="TreatmentCenters.TC_email" class="form-control" />
+                <span asp-validation-for="TreatmentCenters.TC_email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./IndexAdmin">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

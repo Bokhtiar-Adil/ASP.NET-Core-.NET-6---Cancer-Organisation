@@ -1,0 +1,89 @@
+﻿@page
+@model NonProfitSiteV3.Pages.Forms.VolunteerApplicationForm.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div style="height: 90px;"></div>
+<section class="short-intro" style="z-index: 10;">
+    <h1>Details</h1>
+</section>
+<style>
+    .short-intro {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background: #36454F;
+    height: fit-content;
+    }
+    .short-intro h1 {
+    color: lawngreen;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    }
+</style>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VolunteerApplicants.VA_name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VolunteerApplicants.VA_name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VolunteerApplicants.VA_father)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VolunteerApplicants.VA_father)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VolunteerApplicants.VA_contact)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VolunteerApplicants.VA_contact)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VolunteerApplicants.VA_email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VolunteerApplicants.VA_email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VolunteerApplicants.VA_education)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VolunteerApplicants.VA_education)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VolunteerApplicants.VA_experience)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VolunteerApplicants.VA_experience)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VolunteerApplicants.VA_religion)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VolunteerApplicants.VA_religion)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VolunteerApplicants.VA_dob)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VolunteerApplicants.VA_dob)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.VolunteerApplicants.VA_address)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.VolunteerApplicants.VA_address)
+        </dd>
+    </dl>
+</div>
+

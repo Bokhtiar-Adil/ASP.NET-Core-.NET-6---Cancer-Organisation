@@ -1,0 +1,49 @@
+﻿@page
+@model NonProfitSiteV3.Pages.Lists.DoctorsListControl.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Doctors</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Doctors.Doc_name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Doctors.Doc_name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Doctors.Doc_description)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Doctors.Doc_description)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Doctors.Doc_city)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Doctors.Doc_city)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Doctors.Doc_contact)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Doctors.Doc_contact)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Doctors.Doc_email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Doctors.Doc_email)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.Doctors?.Doc_Id">Edit</a> |
+    <a asp-page="./IndexAdmin">Back to List</a>
+</div>

@@ -1,0 +1,109 @@
+﻿@page
+@model NonProfitSiteV3.Pages.NewsEventsModel
+
+@{
+    ViewData["Title"] = "NewsEvents";
+}
+
+<link rel="stylesheet" href="~/css/myNewsEvents.css" asp-append-version="true" />
+
+<div style="height: 90px;"></div>
+<section class="short-intro" style="z-index: 10;">
+    <h1>news and events</h1>
+</section>
+<style>
+    .short-intro {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background: #36454F;
+    height: fit-content;
+    }
+    .short-intro h1 {
+    color: lawngreen;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    }
+</style>
+
+<section class="page-part">
+    <h3>upcoming events</h3>
+    <article class="flexed-item-holder">
+        @foreach(var item in Model.Events)
+        {
+          @if(item.Ev_status == "Upcoming")
+            {
+                <div class="single-branch">
+                    <h4>@Html.DisplayFor(modelItem => item.Ev_name)</h4>
+                    <p>Location: @Html.DisplayFor(modelItem => item.Ev_location)</p>
+                    <p>Schedule: @Html.DisplayFor(modelItem => item.Ev_timedate)</p>
+                </div>  
+            }
+            
+        }
+    </article>
+</section>
+
+<section class="page-part">
+    <h3>recent events</h3>
+    <article class="flexed-item-holder">
+        @foreach(var item in Model.Events)
+        {
+          @if(item.Ev_status == "Recent")
+            {
+                <div class="single-branch">
+                    <h4>@Html.DisplayFor(modelItem => item.Ev_name)</h4>
+                    <p>Location: @Html.DisplayFor(modelItem => item.Ev_location)</p>
+                    <p>Schedule: @Html.DisplayFor(modelItem => item.Ev_timedate)</p>
+                </div>  
+            }
+            
+        }
+    </article>
+</section>
+@*<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Events[0].Ev_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Events[0].Ev_location)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Events[0].Ev_timedate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Events[0].Ev_status)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Events) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ev_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ev_location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ev_timedate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ev_status)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Ev_Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Ev_Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Ev_Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+*@

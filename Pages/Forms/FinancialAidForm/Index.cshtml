@@ -1,0 +1,154 @@
+﻿@page
+@model NonProfitSiteV3.Pages.Forms.FinancialAidForm.IndexModel
+
+@{
+    ViewData["Title"] = "Financial Aid Request List";
+}
+
+<link rel="stylesheet" href="~/css/CyborgTheme.css" asp-append-version="true" />
+
+<div style="height: 100px;"></div>
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2>@ViewData["Title"]</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-page="create" class="btn btn-primary">
+                <img src="~/Images/Icons/square-plus-solid.svg" style="width: 15px; height: 15px;" /> &nbsp;Add New Entry
+            </a>
+        </div>
+    </div>
+
+    <br /><br />
+    <table class="table table-bordered table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.FinancialAid[0].AID_name)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FinancialAid[0].AID_father)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FinancialAid[0].AID_contact)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FinancialAid[0].AID_email)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FinancialAid[0].AID_address)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FinancialAid[0].AID_occupation)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.FinancialAid[0].AID_reason)
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.FinancialAid) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AID_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AID_father)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AID_contact)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AID_email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AID_address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AID_occupation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AID_reason)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.AID_Id" class="btn btn-primary mx-2">
+                    <img src="~/Images/Icons/pen-to-square-solid.svg" style="width: 15px; height: 15px;" />    
+                </a>|
+                <a asp-page="./Details" asp-route-id="@item.AID_Id" class="btn btn-success mx-2">
+                    <img src="~/Images/Icons/circle-info-solid.svg" style="width: 15px; height: 15px;" />       
+                </a> |
+                <a asp-page="./Delete" asp-route-id="@item.AID_Id" class="btn btn-danger mx-2">
+                    <img src="~/Images/Icons/trash-solid.svg" style="width: 15px; height: 15px;" />
+                </a>
+            </td>
+        </tr>
+}
+        </tbody>
+    </table>
+</div>
+
+@*<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FinancialAid[0].AID_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinancialAid[0].AID_father)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinancialAid[0].AID_contact)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinancialAid[0].AID_email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinancialAid[0].AID_address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinancialAid[0].AID_occupation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinancialAid[0].AID_reason)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.FinancialAid) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AID_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AID_father)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AID_contact)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AID_email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AID_address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AID_occupation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AID_reason)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.AID_Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.AID_Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.AID_Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>*@

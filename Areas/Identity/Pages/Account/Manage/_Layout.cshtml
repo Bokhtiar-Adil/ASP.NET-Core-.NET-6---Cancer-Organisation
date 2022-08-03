@@ -1,0 +1,34 @@
+﻿@{
+    if (ViewData.TryGetValue("ParentLayout", out var parentLayout))
+    {
+        Layout = (string)parentLayout;
+    }
+    else
+    {
+        Layout = "/Areas/Identity/Pages/_Layout.cshtml";
+    }
+}
+
+<link rel="stylesheet" href="~/css/myProfileLayout.css" />
+
+<div style="height: 90px; width: 100%;"></div>
+<section class="login-form-container">
+    <h2>Manage your account</h2>
+    <hr />
+           
+        <div class="main-part">
+            <div class="page-section-sidenav">
+                <partial name="_ManageNav" />
+            </div>
+            <hr style="width: 2px;" />
+            <div class="page-section">
+                @RenderBody()
+            </div>
+        </div>
+   
+</section>
+
+
+@section Scripts {
+    @RenderSection("Scripts", required: false)
+}

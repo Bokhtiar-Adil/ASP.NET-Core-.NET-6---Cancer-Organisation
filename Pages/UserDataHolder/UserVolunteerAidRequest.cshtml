@@ -1,0 +1,80 @@
+﻿@page
+@model NonProfitSiteV3.Pages.UserDataHolder.UserVolunteerAidRequestModel
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    ViewData["Title"] = "User Volunteer Aid Request";
+}
+
+<div style="height: 100px;"></div>
+<h1>@User.Identity?.Name 's Volunteer Aid Requests</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerRequest[0].VLreq_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerRequest[0].VLreq_father)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerRequest[0].VLreq_contact)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerRequest[0].VLreq_email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerRequest[0].VLreq_address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerRequest[0].VLreq_occupation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerRequest[0].VLreq_type)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerRequest[0].VLreq_quantity)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.VolunteerRequest) {
+    @if(User.Identity?.Name == item.VLreq_email)
+            {
+                <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.VLreq_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VLreq_father)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VLreq_contact)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VLreq_email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VLreq_address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VLreq_occupation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VLreq_type)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VLreq_quantity)
+            </td>
+            
+        </tr>
+            }
+            
+}
+    </tbody>
+</table>

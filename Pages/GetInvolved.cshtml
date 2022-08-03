@@ -1,0 +1,163 @@
+﻿@page
+@model NonProfitSiteV3.Pages.GetInvolvedModel
+@{
+}
+<link rel="stylesheet" href="~/css/myGetInvolved.css" asp-append-version="true">
+
+<div style="height: 90px;"></div>
+<section class="short-intro" style="z-index: 10;">
+    <h1>get involved</h1>
+</section>
+<style>
+    .short-intro {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background: #36454F;
+    height: fit-content;
+    }
+    .short-intro h1 {
+    color: lawngreen;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    }
+</style>
+
+<section class="topic-list">
+    <h3>get involved in many ways</h3>
+    <div class="topic-link">
+        <button class="link" style="
+            background: url(../Images/donation1.jpg) center/cover no-repeat;
+          ">
+            <a href="#donate">financial donation</a>
+        </button>
+        <button class="link" style="
+            background: url(../Images/volunteer5.jpg) center/cover no-repeat;
+          ">
+            <a href="#volunteer">become a volunteer</a>
+        </button>
+        <button class="link" style="background: url(../Images/partner2.jpg) center/cover no-repeat">
+            <a href="#social">social support</a>
+        </button>
+        <button class="link" style="background: url(../Images/event.jpg) center/cover no-repeat">
+            <a href="#event">be a part of our events</a>
+        </button>
+    </div>
+</section>
+
+<section class="page-part" id="donate">
+  <div style="height: 100px"></div>
+  <h3>donate now</h3>
+  <p>Your gift means we can bring hope to cancer patients. Together we are fighting cancer smarter, better and harder than we ever have before. Thank you for your support.</p>
+  <br>
+  <p>To donate, please click the following button and follow the instructions.</p>
+  <button type="button" class="btn btn-primary">
+    <a asp-page="./Forms/DonationForm/Create" style="color: #fff;">click here to donate</a>
+  </button>
+
+  </button>
+  @*<button type="button" class="mybutton" id="donerformOpener">donate now</button>
+  <div class="my-form-container" id="donerform">
+      <form class="my-form">
+          <h4>donation form</h4>
+          <div class="single-pair">
+              <label for="doner_name">Name</label>
+              <input type="text" id="doner_name" placeholder="e.g. Umar Faruk" required />
+          </div>
+          <div class="single-pair">
+              <label for="doner_contact">Contact Number</label>
+              <input type="text" id="doner_contact" placeholder="e.g. 01xxxxxxxxx" required />
+          </div>
+          <div class="single-pair">
+              <label for="doner_email">Email</label>
+              <input type="email" id="doner_email" placeholder="e.g. umarfaruk@gmail.com" />
+          </div>
+          <div class="single-pair">
+              <label for="doner_amount">Amount (in Taka)</label>
+              <input type="number" id="doner_amount" placeholder="e.g. 30,000" required />
+          </div>
+          <div class="single-pair">
+              <label for="doner_paymentmothod" >payment method</label>
+              <input list="paymentMethods" id="doner_paymentmothod" placeholder="e.g. Bkash" required/>
+              <datalist id="paymentMethods">
+                  <option value="Bkash"></option>
+                  <option value="Rocket"></option>
+                  <option value="Nagad"></option>
+                  <option value="Bank Account"></option>
+              </datalist>
+          </div>
+          <div class="single-pair">
+              <label for="doner_paymentDetails">Details (Bkash number/Bank Account Number etc)</label>
+              <input type="text" id="doner_paymentDetails" placeholder="e.g. 'Bkash no: 01xxxxxxxxx' or 'Islami Bank Account no: xxxxxxxxxx'" required />
+          </div>
+          
+          <div class="my-form-btn-holder"><button type="submit" class="mybutton" style="background-color: rgb(28, 3, 253); color: rgb(5, 255, 5); box-shadow: 2px 4px 4px #fff;">Submit</button></div>
+      </form>
+  </div>
+  <script>
+    const GIformContainer1 = document.getElementById("donerform");
+    const GIformOpener1 = document.getElementById("donerformOpener");
+
+    GIformOpener1.addEventListener('click', function(){
+        GIformContainer1.classList.toggle('form-show');
+    });
+  </script>*@
+</section>
+
+
+<section class="page-part" id="volunteer">
+    <div style="height: 100px;"></div>
+    <h3>become a volunteer</h3>
+    <p>
+        Volunteering can provide a healthy boost to your self-confidence, self-esteem, and life satisfaction. You are doing good for others and the community, which provides a natural sense of accomplishment. Your role as a volunteer can also give you a sense of pride and identity.
+    </p>
+    <br />
+    <p>
+        you camn become a volunteer yourself for our organisation. there are numerous opportunity for a volunteer to shine in our group. check out the 'volunteers corner' for more info. if you want to be a volunteer yourself, you will need contact our nearest branch.
+    </p>
+    <div style="display: flex; align-items: center; justify-content: center; width: 100%; column-gap: 1rem;">
+        <button type="button" class="btn btn-primary">
+            <a asp-page="./Forms/VolunteerApplicationForm/Create" style="color: #fff;">Apply as a volunteer</a>
+        </button>
+    </div>
+</section>
+
+<section class="page-part" id="social">
+    <div style="height: 100px"></div>
+    <h3>social support</h3>
+    <p>there are many cancer patients around us. we might not be able to reach everybody. but you can help us and we can help you. if you want to do --</p>
+    <ul>
+        <li><p>arrange an event to cheer your cancer-affected loved ones</p></p></li>
+        <li><p>arrange a seminar for your society</p></li>
+        <li><p>arrange an awareness event</p></li>
+        <li><p>peer to peer support event</p></li>
+        <li><p>fundraising event</p></li>
+        <li><p>plan a gift to celebrate and/or cheer your loved ones</p></li>
+    </ul>
+    <p>you can contact our event managers and specialists. we have the best event-planners and organizers with us who are always ready to serve you happiness. to contact them -- <br />phone numbers: </p>
+    
+    <ul>
+        <li><p>01234-567890</p></li>
+        <li><p>01234-567891</p></li>
+        <li><p>01234-567892</p></li>
+    </ul>
+    <br /><p>emails:</p><br />
+    <ul>
+        <li><p>eventmangersev@gmail.com</p></li>
+        <li><p>eventplannersev@gmail.com</p></li>
+    </ul>
+</section>
+
+
+<section class="page-part" id="event">
+    <div style="height: 100px"></div>
+    <h3>be a part of our events</h3>
+    <p>evergreen group is always involved in organising seminars, awareness events, meet-up, fundraising events and othr activities. you can be a part of these too. to know the schedule for our events and related matters, plese visit 'News and Events' page.</p>
+</section>
+
+
+
+@*<img src="/Images/under_construction.png" alt="" style="margin: 1rem; width: 400px; height: auto;">*@

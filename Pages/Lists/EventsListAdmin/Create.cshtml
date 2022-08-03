@@ -1,0 +1,50 @@
+﻿@page
+@model NonProfitSiteV3.Pages.Lists.EventsListAdmin.CreateModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div style="height: 100px; width: 100%;"></div>
+<h1>Create</h1>
+
+<h4>Events</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Events.Ev_name" class="control-label"></label>
+                <input asp-for="Events.Ev_name" class="form-control" />
+                <span asp-validation-for="Events.Ev_name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Events.Ev_location" class="control-label"></label>
+                <input asp-for="Events.Ev_location" class="form-control" />
+                <span asp-validation-for="Events.Ev_location" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Events.Ev_timedate" class="control-label"></label>
+                <input asp-for="Events.Ev_timedate" class="form-control" />
+                <span asp-validation-for="Events.Ev_timedate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Events.Ev_status" class="control-label"></label>
+                <input asp-for="Events.Ev_status" class="form-control" />
+                <span asp-validation-for="Events.Ev_status" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,103 @@
+﻿@page
+@model NonProfitSiteV3.Pages.Forms.VolunteerApplicationForm.IndexModel
+
+@{
+    ViewData["Title"] = "Volunteer Applicant List";
+}
+
+
+<link rel="stylesheet" href="~/css/CyborgTheme.css" asp-append-version="true" />
+
+<div style="height: 100px;"></div>
+
+<div class="container p-3">
+    <div class="row pt-4">
+        <div class="col-6">
+            <h2>@ViewData["Title"]</h2>
+        </div>
+        <div class="col-6 text-end">
+            <a asp-page="create" class="btn btn-primary">
+                <img src="~/Images/Icons/square-plus-solid.svg" style="width: 15px; height: 15px;" /> &nbsp;Add New Entry
+            </a>
+        </div>
+    </div>
+
+    <br /><br />
+    <table class="table table-bordered table-striped" style="width:100%">
+        <thead>
+            <tr>
+                <th>
+                @Html.DisplayNameFor(model => model.VolunteerApplicants[0].VA_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerApplicants[0].VA_father)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerApplicants[0].VA_contact)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerApplicants[0].VA_email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerApplicants[0].VA_education)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerApplicants[0].VA_experience)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerApplicants[0].VA_religion)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerApplicants[0].VA_dob)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.VolunteerApplicants[0].VA_address)
+            </th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.VolunteerApplicants) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.VA_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VA_father)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VA_contact)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VA_email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VA_education)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VA_experience)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VA_religion)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VA_dob)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VA_address)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.VA_Id" class="btn btn-primary mx-2">
+                    <img src="~/Images/Icons/pen-to-square-solid.svg" style="width: 15px; height: 15px;" />    
+                </a>|
+                <a asp-page="./Details" asp-route-id="@item.VA_Id" class="btn btn-success mx-2">
+                    <img src="~/Images/Icons/circle-info-solid.svg" style="width: 15px; height: 15px;" />       
+                </a> |
+                <a asp-page="./Delete" asp-route-id="@item.VA_Id" class="btn btn-danger mx-2">
+                    <img src="~/Images/Icons/trash-solid.svg" style="width: 15px; height: 15px;" />
+                </a>
+            </td>
+        </tr>
+}
+        </tbody>
+    </table>
+</div>

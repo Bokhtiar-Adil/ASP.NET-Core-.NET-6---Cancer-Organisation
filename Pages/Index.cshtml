@@ -1,0 +1,151 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<link rel="stylesheet" href="~/css/backgroudAutoSlider.css" asp-append-version="true" />
+<link rel="stylesheet" href="/css/myHomepage.css" asp-append-version="true">
+
+<div style="height: 90px; width: 100%;"></div>
+ <section class="welcome-slide">
+    <figure class="slider">
+        <figure>      
+            <img src="./Images/welcomeimg4.jpg" alt>
+        </figure>
+        <figure>      
+            <img src="./Images/welcomeimg3.jpg" alt>
+            
+        </figure>        
+        <figure>      
+            <img src="./Images/welcomeimg1.jpg" alt>
+            
+        </figure>
+        <figure>      
+            <img src="./Images/welcomeing2.jpg" alt>
+            
+        </figure>
+        <figure>      
+            <img src="./Images/greetvol1.webp" alt>
+            
+        </figure>
+        
+        @*<figure>      
+            <img src="./Images/about2.jpg" alt>
+            <figcaption>Hobbiton, New Zealand</figcaption>
+        </figure>*@
+    </figure>
+    <section class="short-intro" style="z-index: 10;">
+        <h1>evergreen cancer society</h1>
+    </section>
+ </section>
+  <section class="short-tabs">
+    <article class="single-card">
+      <img src="../Images/donation3.png" alt="" />
+      <h3>every penny saves lives</h3>
+      <p>
+        Your gift means we can bring hope to cancer patients. Together we are fighting cancer smarter, better and harder than we ever have before. Thank you for your support.
+      </p>
+      <button class="mybutton">donate</button>
+    </article>
+    <article class="single-card">
+      <img src="../Images/we-can-help.jpg" alt="" />
+      <h3>we are here for you</h3>
+      <p>If you have been touched by cancer, Evergreen Cancer Society is here to help. We can help you with financial aid, blood bank, volunteer service and many more.
+      </p>
+      <button>get help</button>
+    </article>
+    <article class="single-card">
+      <img src="../Images/caregiving1.jpg" alt="" />
+      <h3>devout yourself</h3>
+      <p>
+        Join a community of like-minded survivors, caregivers, volunteers, and participants who believe that the future can be free from cancer.
+      </p>
+      <button>volunteer's corner</button>
+    </article>
+  </section>
+  <section class="briefs-and-links">
+    <div class="group-brief single-brief">
+      <article>
+        <div>
+          <h4>evergreen group</h4>
+          <p>
+            At the Evergreen Cancer Society, we’re on a mission to free the world from cancer. Until we do, we’ll be funding and conducting research, sharing expert information, supporting patients, and spreading the word about prevention. All so you can live longer — and better. Whether we're working in a community near you or one halfway around the world, our mission remains the same: to save lives, celebrate lives, and lead the fight for a world without cancer. See what we've been up to lately — and get to know the Evergreen Cancer Society a little bit better.
+          </p>
+          <div class="btn-container">
+            <a asp-page="./AboutUs" class="btn btn-primary">learn about evergreen group</a>
+          </div>
+        </div>
+        <span class="img-span">
+          <img src="../Images/donation3.png" alt="" />
+        </span>
+      </article>
+    </div>
+    <div class="cancer-brief single-brief">
+      <article>
+        <div>
+          <h4>don't fear cancer, learn to face it</h4>
+          <p> Whether you or someone you love has cancer, knowing what to expect can help you cope. Here you'll find in-depth information on specific cancer types – including risk factors, early detection, diagnosis, and treatment options. You can help reduce your risk of cancer by making healthy choices like eating right, staying active and not smoking. It’s also important to follow recommended screening guidelines, which can help detect certain cancers early.Whether you want to learn about treatment options, get advice on coping with side effects, or have questions about health insurance, we’re here to help. 
+
+          </p>
+          <div class="btn-container">
+           <a asp-area="" asp-page="/Cancer" class="btn btn-primary">learn more about cancer</a>
+          </div>
+        </div>
+        <span class="img-span">
+          <img src="../Images/cancer1.jpeg" alt="" />
+        </span>
+      </article>
+    </div>
+    <div class="donate-brief single-brief">
+      <article>
+        <div>
+          <h4>donate to save lives</h4>
+          <p>
+            Your gift means we can bring hope to cancer patients. Together we are fighting cancer smarter, better and harder than we ever have before. Thank you for your support. The Evergreen Cancer Society’s National Cancer Information Center is open 24 hours a day, 7 days a week to help those touched by cancer.
+          </p>
+          <div class="btn-container">
+            <a asp-page="./GetInvolved" class="btn btn-primary">donate now</a>
+          </div>
+        </div>
+        <span class="img-span">
+          <img src="../Images/donation4.jpg" alt="" />
+        </span>
+      </article>
+    </div>
+    <div class="aid-brief single-brief">
+      <article>
+        <div>
+          <h4>get the help you need</h4>
+          <p>If you have been touched by cancer, your Evergreen Cancer Society is here to help. We want to make sure you know about the rich resources provided by your Evergreen Cancer Society. You can request financial aid, blood bank service or volunteer service from us.
+
+          </p>
+          <div class="btn-container">
+            <a asp-page="./HelpSupport" class="btn btn-primary">Request Financial Aid</a>
+            <a asp-page="./HelpSupport" class="btn btn-primary">Request Blood Donation</a>
+            <a asp-page="./HelpSupport" class="btn btn-primary">Get A Volunteer</a>
+          </div>
+        </div>
+        <span class="img-span">
+          <img src="../Images/caregiving1.jpg" alt="" />
+        </span>
+      </article>
+    </div>
+    <div class="getinv-brief single-brief">
+      <article>
+        <div>
+          <h4>get involved, make a difference</h4>
+          <p>
+            We couldn’t do what we do without our volunteers and donors. Together, we’re making a difference – and you can, too. Become a volunteer, make a tax-deductible donation, or participate in a fundraising event to help us save lives. We conduct numerous events around the country to raise awareness about cancer and its treatment. you can join us and be part of our mission too.
+          </p>
+          <div class="btn-container">
+            <a asp-page="./NewsEvents" class="btn btn-primary">Events Corner</a>
+            <a asp-page="./GetInvolved" class="btn btn-primary">Be A Volunteer</a>
+            @*<a asp-page="./GetInvolved" class="btn btn-primary">Be A Volunteer</a>*@
+          </div>
+        </div>
+        <div class="img-span">
+          <img src="../Images/diff1.jpg" alt="" />
+        </div>
+      </article>
+    </div>
+  </section>

@@ -1,0 +1,120 @@
+﻿1. From Login page --> 
+
+@*<div class="col-md-6 col-md-offset-2">
+        <section>
+            <h3>Use another service to log in.</h3>
+            <hr />
+            @{
+                if ((Model.ExternalLogins?.Count ?? 0) == 0)
+                {
+                    <div>
+                        <p>
+                            There are no external authentication services configured. See this <a href="https://go.microsoft.com/fwlink/?LinkID=532715">article
+                            about setting up this ASP.NET application to support logging in via external services</a>.
+                        </p>
+                    </div>
+                }
+                else
+                {
+                    <form id="external-account" asp-page="./ExternalLogin" asp-route-returnUrl="@Model.ReturnUrl" method="post" class="form-horizontal">
+                        <div>
+                            <p>
+                                @foreach (var provider in Model.ExternalLogins)
+                                {
+                                    <button type="submit" class="btn btn-primary" name="provider" value="@provider.Name" title="Log in using your @provider.DisplayName account">@provider.DisplayName</button>
+                                }
+                            </p>
+                        </div>
+                    </form>
+                }
+            }
+        </section>
+    </div>*@
+
+
+2) Form Login page -->
+
+                    <p>
+                        <a asp-page="./Register" asp-route-returnUrl="@Model.ReturnUrl">Register as a new user</a>
+                    </p>
+                    <p>
+                        <a id="resend-confirmation" asp-page="./ResendEmailConfirmation">Resend email confirmation</a>
+                    </p>
+
+3) Manage Nav Email page --> 
+@*<button id="email-verification" type="submit" asp-page-handler="SendVerificationEmail" class="btn btn-link">Send verification email</button>*@
+3.1) Manage Nav page -->
+<li class="nav-item"><a class="nav-link @ManageNavPages.EmailNavClass(ViewContext)" id="email" asp-page="./Email">Email</a></li>
+
+
+3) My own index page welcome greet -->
+
+@*<section class="home-welcome">
+    <div class="img-and-greet">
+      <div class="quotes">
+        <blockquote>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit Ipsam quod
+        </blockquote>
+        <h3>----- Lorem Ipsum.</h3>
+      </div>
+      <div class="helplineAndEmail">
+        <h4 style="color: greenyellow;">don't hesitate to ask for help !</h4>
+        <h4>hotlines:</h4>
+        <h4>01234567890</h4>
+        <h4>09876543210</h4>
+        <h4>emails:</h4>
+        <h4 style="text-transform: none;">eghelpline@gmail.com</h4>
+      </div>
+    </div>
+  </section>*@
+
+4) Css for the above code -->
+
+/*.img-and-greet {
+    background: url("/Images/about1.jpg") no-repeat center;
+    width: 100%;
+    height: 600px;
+    display: flex;*/
+    /* flex-direction: column; */
+    /*justify-content: space-around;
+    align-items: center;
+    row-gap: 3vh;
+}
+
+.quotes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    max-width: 50%;
+}
+
+    .quotes blockquote,
+    h3 {
+        text-align: left;
+        text-transform: capitalize;
+        letter-spacing: 0.1rem;
+        line-height: 4vh;
+        font-size: 25px;
+        font-weight: bold;
+        color: rgb(0, 47, 255);
+    }
+
+.helplineAndEmail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    max-width: 50%;
+    border-left: 2px solid rgb(50, 0, 248);
+    padding: 1rem;
+    background: #36454F;
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+    .helplineAndEmail h4 {
+        text-transform: capitalize;
+        color: yellow;
+    }*/

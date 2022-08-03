@@ -1,0 +1,307 @@
+﻿@page
+@model NonProfitSiteV3.Pages.AboutUsModel
+@{
+}
+
+<link rel="stylesheet" href="~/css/myAboutUs.css" asp-append-version="true" />
+
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+
+<div style="height: 90px;"></div>
+
+<section class="img-and-greet">
+    <h1>Evergreen group</h1>
+    <h3>with you, for you, always !!</h3>
+</section>
+
+<section class="short-intro" style="z-index: 10;">
+    <h1>about us</h1>
+</section>
+<style>
+    .short-intro {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background: #36454F;
+    height: fit-content;
+    }
+    .short-intro h1 {
+    color: lawngreen;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    }
+</style>
+
+<h4 class="about-about">At the Evergreen Cancer Society, we’re on a mission to free the world from cancer. Until we do, we’ll be funding and conducting research, sharing expert information, supporting patients, and spreading the word about prevention. All so you can live longer — and better. Whether we're working in a community near you or one halfway around the world, our mission remains the same: to save lives, celebrate lives, and lead the fight for a world without cancer. See what we've been up to lately — and get to know the Evergreen Cancer Society a little bit better.</h4>
+
+<h1 class="section-header">
+    our team leaders
+</h1>
+<div style="height: 20px; width: 100%;"></div>
+
+@*---Downloaded card slider template from www.codinglabweb.com-----*@
+
+<div class="slide-container swiper">
+            <div class="slide-content">
+                <div class="card-wrapper swiper-wrapper">
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="/Images/Persons/Cavil1.jpg" alt="CEO" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Abdur Rahman</h2>
+                            <p class="description">CEO</p>
+                            <div class="profile-social-links">
+                                <a class="btn btn-primary" href="https://www.facebook.com">
+                                    <img src="~/Images/Icons/facebook-brands.svg" style="height: 15px; weight: 15px;" />
+                                </a>
+                                <a class="btn btn-primary" href="https://www.twitter.com">
+                                    <img src="~/Images/Icons/twitter-brands.svg" style="height: 15px; weight: 15px;" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="./Images/Persons/scott1.jpg" alt="Manager" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Abdur Rahim</h2>
+                            <p class="description">Manager</p>
+                            <div class="profile-social-links">
+                                <a class="btn btn-primary" href="https://www.facebook.com">
+                                    <img src="~/Images/Icons/facebook-brands.svg" style="height: 15px; weight: 15px;" />
+                                </a>
+                                <a class="btn btn-primary" href="https://www.twitter.com">
+                                    <img src="~/Images/Icons/twitter-brands.svg" style="height: 15px; weight: 15px;" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="./Images/Persons/hugh1.jpg" alt="CFO" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Abdul Azad</h2>
+                            <p class="description">Creative Manager</p>
+                            <div class="profile-social-links">
+                                <a class="btn btn-primary" href="https://www.facebook.com">
+                                    <img src="~/Images/Icons/facebook-brands.svg" style="height: 15px; weight: 15px;" />
+                                </a>
+                                <a class="btn btn-primary" href="https://www.twitter.com">
+                                    <img src="~/Images/Icons/twitter-brands.svg" style="height: 15px; weight: 15px;" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="./Images/Persons/bradley1.webp" alt="Medical Advisor" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Abdullah</h2>
+                            <p class="description">Medical Advisor</p>
+                            <div class="profile-social-links">
+                                <a class="btn btn-primary" href="https://www.facebook.com">
+                                    <img src="~/Images/Icons/facebook-brands.svg" style="height: 15px; weight: 15px;" />
+                                </a>
+                                <a class="btn btn-primary" href="https://www.twitter.com">
+                                    <img src="~/Images/Icons/twitter-brands.svg" style="height: 15px; weight: 15px;" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="./Images/Persons/rock1.webp" alt="Advisor" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Abul Kalam</h2>
+                            <p class="description">Advisor</p>
+                            <div class="profile-social-links">
+                                <a class="btn btn-primary" href="https://www.facebook.com">
+                                    <img src="~/Images/Icons/facebook-brands.svg" style="height: 15px; weight: 15px;" />
+                                </a>
+                                <a class="btn btn-primary" href="https://www.twitter.com">
+                                    <img src="~/Images/Icons/twitter-brands.svg" style="height: 15px; weight: 15px;" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="./Images/Persons/john1.jpg" alt="" class="card-img">
+                            </div>
+                        </div>
+
+                        <div class="card-content">
+                            <h2 class="name">Abu Bkr</h2>
+                            <p class="description">Advisor</p>
+                            <div class="profile-social-links">
+                                <a class="btn btn-primary" href="https://www.facebook.com">
+                                    <img src="~/Images/Icons/facebook-brands.svg" style="height: 15px; weight: 15px;" />
+                                </a>
+                                <a class="btn btn-primary" href="https://www.twitter.com">
+                                    <img src="~/Images/Icons/twitter-brands.svg" style="height: 15px; weight: 15px;" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card swiper-slide">
+                        <div class="image-content">
+                            <span class="overlay"></span>
+                            <div class="card-image">
+                                <img src="./Images/Persons/allan1.webp" alt="Advisor" class="card-img">
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <h2 class="name">Ali Hossen</h2>
+                            <p class="description">Chief</p>
+                            <div class="profile-social-links">
+                                <a class="btn btn-primary" href="https://www.facebook.com">
+                                    <img src="~/Images/Icons/facebook-brands.svg" style="height: 15px; weight: 15px;" />
+                                </a>
+                                <a class="btn btn-primary" href="https://www.twitter.com">
+                                    <img src="~/Images/Icons/twitter-brands.svg" style="height: 15px; weight: 15px;" />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 30px; width: 100%;"></div>
+            <div class="swiper-button-next swiper-navBtn"></div>
+            <div class="swiper-button-prev swiper-navBtn"></div>
+            <div class="swiper-pagination"></div>
+</div>
+
+
+<section class="page-part">
+    <h1 class="section-header">our branches</h1>
+    <article class="flexed-item-holder">
+        <div class="single-branch">
+            <h4>Khulna</h4>
+            <ul>
+                <li>12/A, Kuet Road, Khulna</li>
+                <li>01234-567890</li>
+                <li>01234-567891</li>
+                <li>evergreenkhulna@gmail.com</li>
+            </ul>
+        </div>
+        <div class="single-branch">
+            <h4>Dhaka</h4>
+            <ul>
+                <li>92/A, Dhanmondi, Dhaka</li>
+                <li>01234-567980</li>
+                <li>01234-567981</li>
+                <li>evergreendhaka@gmail.com</li>
+            </ul>
+        </div>
+        <div class="single-branch">
+            <h4>Chittagong</h4>
+            <ul>
+                <li>13/B, Main road, Chittagong</li>
+                <li>01234-566690</li>
+                <li>01234-566691</li>
+                <li>evergreenchtng@gmail.com</li>
+            </ul>
+        </div>
+        <div class="single-branch">
+            <h4>Rajshahi</h4>
+            <ul>
+                <li>20/M, Station Road, Rajshahi</li>
+                <li>01234-567877</li>
+                <li>01234-567878</li>
+                <li>evergreenrjshi@gmail.com</li>
+            </ul>
+        </div>
+        <div class="single-branch">
+            <h4>Sylhet</h4>
+            <ul>
+                <li>33/7, Main Road, Sylhet</li>
+                <li>01234-567870</li>
+                <li>01234-567871</li>
+                <li>evergreensylhet@gmail.com</li>
+            </ul>
+        </div>
+    </article>
+</section>
+
+<section class="page-part">
+    <h1 class="section-header">our partners</h1>
+    <article class="flexed-item-holder">
+        <img src="~/Images/Icons/BKash-Icon-Logo.wine.svg" style="width: 100px; height: 100px;" /> 
+        <img src="~/Images/Icons/184240.svg" style="width: 100px; height: 100px;" />
+        <img src="~/Images/Icons/nagad-seeklogo.com.svg" style="width: 100px; height: 100px;" />
+        <img src="~/Images/Icons/Logo_KUET.svg.png" style="width: 100px; height: 100px;" />
+        <img src="~/Images/Icons/7796266_New Project (2).jpg" style="width: 100px; height: 100px;" />
+        <img src="~/Images/Icons/microsoft-windows-logo-512x512.png" style="width: 100px; height: 100px;" />
+        <img src="~/Images/Icons/as-sunnah.png" style="width: 100px; height: 100px;" />
+        <img src="~/Images/Icons/startech.png" style="width: 100px; height: 100px;" />
+        <img src="~/Images/Icons/EX2v3g0X_400x400.jpg" style="width: 100px; height: 100px;" />
+        <img src="~/Images/Icons/logo-who.tmb-1200v.jpg" style="width: 100px; height: 100px;" />
+    </article>
+</section>
+
+
+
+
+
+@*---Downloaded card slider template from www.codinglabweb.com-----*@
+
+<script type="module">
+    import Swiper from 'https://unpkg.com/swiper@8/swiper-bundle.esm.browser.min.js'  
+    var swiper = new Swiper(".slide-content", {
+    slidesPerView: 3,
+    spaceBetween: 25,
+    loop: true,
+    centerSlide: 'true',
+    fade: 'true',
+    grabCursor: 'true',
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      dynamicBullets: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+
+    breakpoints:{
+        0: {
+            slidesPerView: 1,
+        },
+        520: {
+            slidesPerView: 2,
+        },
+        950: {
+            slidesPerView: 3,
+        },
+    },
+  });
+</script>

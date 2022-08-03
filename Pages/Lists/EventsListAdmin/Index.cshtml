@@ -1,0 +1,55 @@
+﻿@page
+@model NonProfitSiteV3.Pages.Lists.EventsListAdmin.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<div style="height: 100px; width: 100%;"></div>
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Events[0].Ev_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Events[0].Ev_location)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Events[0].Ev_timedate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Events[0].Ev_status)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.Events) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ev_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ev_location)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ev_timedate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ev_status)
+            </td>
+            <td>
+                <a asp-page="./Edit" asp-route-id="@item.Ev_Id">Edit</a> |
+                <a asp-page="./Details" asp-route-id="@item.Ev_Id">Details</a> |
+                <a asp-page="./Delete" asp-route-id="@item.Ev_Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

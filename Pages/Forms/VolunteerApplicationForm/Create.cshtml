@@ -1,0 +1,80 @@
+﻿@page
+@model NonProfitSiteV3.Pages.Forms.VolunteerApplicationForm.CreateModel
+
+@{
+    ViewData["Title"] = "Volunteer Application";
+}
+
+<link rel="stylesheet" href="/css/myForm.css" asp-append-version="true" />
+
+<div style="height: 100px;"></div>
+<h1 style="text-align: center; color: red;">Volunteer Application Procedure</h1>
+
+<hr />
+<div class="instruction"><p>
+   first you need to send a scanned copy of your educational certificate (only latest degree), both side of your NID card and a photo of you to <b>egvolapplicant@gmail.com</b> (using the email you will provide in the form) under the subject 'Volunteer Applicant'. then you fill up the following form with proper information. please note that, if you don't fill up the form, we will ignore your email. also, you must send your email using the email you wrote in the form.
+    <br />
+    then we will contact you with further instructions.
+</p></div>
+<hr />
+<h3 style="text-align: center; color: red;">Volunteer Application Form</h3>
+<hr />
+<div class="container-fluid p-3" style="display: flex; align-items: center; justify-content: center;">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="mb-3">
+                <label asp-for="VolunteerApplicants.VA_name" class="control-label"></label>
+                <input asp-for="VolunteerApplicants.VA_name" class="form-control" />
+                <span asp-validation-for="VolunteerApplicants.VA_name" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="VolunteerApplicants.VA_father" class="control-label"></label>
+                <input asp-for="VolunteerApplicants.VA_father" class="form-control" />
+                <span asp-validation-for="VolunteerApplicants.VA_father" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="VolunteerApplicants.VA_contact" class="control-label"></label>
+                <input asp-for="VolunteerApplicants.VA_contact" class="form-control" />
+                <span asp-validation-for="VolunteerApplicants.VA_contact" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="VolunteerApplicants.VA_email" class="control-label"></label>
+                <input asp-for="VolunteerApplicants.VA_email" class="form-control" type="email" />
+                <span asp-validation-for="VolunteerApplicants.VA_email" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="VolunteerApplicants.VA_education" class="control-label"></label>
+                <textarea asp-for="VolunteerApplicants.VA_education" class="form-control"></textarea>
+                <span asp-validation-for="VolunteerApplicants.VA_education" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="VolunteerApplicants.VA_experience" class="control-label"></label>
+                <textarea asp-for="VolunteerApplicants.VA_experience" class="form-control"></textarea>
+                <span asp-validation-for="VolunteerApplicants.VA_experience" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="VolunteerApplicants.VA_religion" class="control-label"></label>
+                <input asp-for="VolunteerApplicants.VA_religion" class="form-control" />
+                <span asp-validation-for="VolunteerApplicants.VA_religion" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="VolunteerApplicants.VA_dob" class="control-label"></label>
+                <input asp-for="VolunteerApplicants.VA_dob" class="form-control" />
+                <span asp-validation-for="VolunteerApplicants.VA_dob" class="text-danger"></span>
+            </div>
+            <div class="mb-3">
+                <label asp-for="VolunteerApplicants.VA_address" class="control-label"></label>
+                <textarea asp-for="VolunteerApplicants.VA_address" class="form-control"></textarea>
+                <span asp-validation-for="VolunteerApplicants.VA_address" class="text-danger"></span>
+            </div>
+            <div class="mb-3" style="display: flex; align-items: center; justify-content: center;">
+                <button type="submit" value="Create" class="btn btn-primary">Submit</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

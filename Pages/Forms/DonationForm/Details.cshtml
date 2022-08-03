@@ -1,0 +1,58 @@
+﻿@page
+@model NonProfitSiteV3.Pages.Forms.DonationForm.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div style="height: 90px;"></div>
+<section class="short-intro" style="z-index: 10;">
+    <h1>Details</h1>
+</section>
+<style>
+    .short-intro {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background: #36454F;
+    height: fit-content;
+    }
+    .short-intro h1 {
+    color: lawngreen;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    }
+</style>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Donation.Don_contact)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Donation.Don_contact)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Donation.Don_email)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Donation.Don_email)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Donation.Don_amount)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Donation.Don_amount)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Donation.Don_details)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Donation.Don_details)
+        </dd>
+    </dl>
+</div>

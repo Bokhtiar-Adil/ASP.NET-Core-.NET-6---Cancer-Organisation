@@ -1,0 +1,74 @@
+﻿@page
+@model NonProfitSiteV3.Pages.UserDataHolder.UserFinancialAidRequestModel
+@using Microsoft.AspNetCore.Identity
+@inject SignInManager<IdentityUser> SignInManager
+@inject UserManager<IdentityUser> UserManager
+
+@{
+    ViewData["Title"] = "User Financial Aid Request";
+}
+
+<div style="height: 100px;"></div>
+<h1>@User.Identity?.Name 's Financial Aid Requests</h1>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FinancialAid[0].AID_name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinancialAid[0].AID_father)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinancialAid[0].AID_contact)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinancialAid[0].AID_email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinancialAid[0].AID_address)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinancialAid[0].AID_occupation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FinancialAid[0].AID_reason)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.FinancialAid) {
+    @if(User.Identity?.Name == item.AID_email)
+            {
+                <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.AID_name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AID_father)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AID_contact)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AID_email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AID_address)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AID_occupation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AID_reason)
+            </td>
+            
+        </tr>
+            }
+            
+}
+    </tbody>
+</table>

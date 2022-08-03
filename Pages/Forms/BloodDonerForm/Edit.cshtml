@@ -1,0 +1,75 @@
+﻿@page
+@model NonProfitSiteV3.Pages.Forms.BloodDonerForm.EditModel
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<h4>BloodDoner</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="BloodDoner.BB_Id" />
+            <div class="form-group">
+                <label asp-for="BloodDoner.BB_name" class="control-label"></label>
+                <input asp-for="BloodDoner.BB_name" class="form-control" />
+                <span asp-validation-for="BloodDoner.BB_name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BloodDoner.BB_father" class="control-label"></label>
+                <input asp-for="BloodDoner.BB_father" class="form-control" />
+                <span asp-validation-for="BloodDoner.BB_father" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BloodDoner.BB_contact" class="control-label"></label>
+                <input asp-for="BloodDoner.BB_contact" class="form-control" />
+                <span asp-validation-for="BloodDoner.BB_contact" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BloodDoner.BB_email" class="control-label"></label>
+                <input asp-for="BloodDoner.BB_email" class="form-control" />
+                <span asp-validation-for="BloodDoner.BB_email" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BloodDoner.BB_address" class="control-label"></label>
+                <input asp-for="BloodDoner.BB_address" class="form-control" />
+                <span asp-validation-for="BloodDoner.BB_address" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BloodDoner.BB_occupation" class="control-label"></label>
+                <input asp-for="BloodDoner.BB_occupation" class="form-control" />
+                <span asp-validation-for="BloodDoner.BB_occupation" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BloodDoner.BB_blodtype" class="control-label"></label>
+                <input asp-for="BloodDoner.BB_blodtype" class="form-control" />
+                <span asp-validation-for="BloodDoner.BB_blodtype" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BloodDoner.BB_quantity" class="control-label"></label>
+                <input asp-for="BloodDoner.BB_quantity" class="form-control" />
+                <span asp-validation-for="BloodDoner.BB_quantity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BloodDoner.BB_deadline" class="control-label"></label>
+                <input asp-for="BloodDoner.BB_deadline" class="form-control" />
+                <span asp-validation-for="BloodDoner.BB_deadline" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-page="./Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
